@@ -1,0 +1,44 @@
+﻿@model Emdat.SoftwareSite.Models.ApplicationVersions
+@{ 
+    var showManualColumn = Model.Versions.Any(v => !string.IsNullOrWhiteSpace(v.ManualPdfFileName) || !string.IsNullOrWhiteSpace(v.ManualWordFileName));
+}
+<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0" class="grid">
+        <tr>
+            <th>Version</th>
+            <th>Install Link</th>
+            @if (showManualColumn)
+            {
+            <th>Manual</th>
+            }
+            @if (Model.ShowVersionHistory)
+            {
+            <th>Version History</th>
+            }
+        </tr>
+    @foreach (var version in Model.Versions)
+    {
+        <tr>
+            <td>@version.MajorVersionNumber</td>
+            <td><a href="@Url.Action("Index", "Download", new { fileName = version.InstallerFileName })">@version.VersionNumber</a></td>
+            @if (showManualColumn)
+            {
+            <td>
+                @if (!string.IsNullOrEmpty(version.ManualPdfFileName))
+                {
+                <a href="@Url.Action("Index", "Download", new { fileName = version.ManualPdfFileName })" style="text-decoration: none;"><i class="fas fa-file-pdf-o"></i></a>
+                }
+                @if (!string.IsNullOrWhiteSpace(version.ManualWordFileName))
+                {
+                <a href="@Url.Action("Index", "Download", new { fileName = version.ManualWordFileName })" style="text-decoration: none;"><i class="fas fa-file-word-o"></i></a>
+                }
+            </td>
+            }
+            @if (Model.ShowVersionHistory)
+            {
+            <td>
+                <a href="@Url.Action("VersionHistory", new { majorVersion = version.MajorVersionNumber })">Version History</a>
+            </td>
+            }
+        </tr>
+    }
+    </table>

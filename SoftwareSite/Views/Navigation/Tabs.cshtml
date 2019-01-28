@@ -1,0 +1,35 @@
+﻿@model IList<System.Web.UI.WebControls.MenuItem>
+
+@{
+    int selectedIndex = 0;
+    for(var i = 0; i < Model.Count; i++)
+    {
+        if (Model[i].Selected)
+        {
+            selectedIndex = i;
+            break;
+        }
+    }
+}
+<div id="tabs">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.NavigateUrl">@item.Text</a>
+            </li>
+        }
+    </ul>
+</div>
+<script type="text/javascript">
+    $("#tabs").tabs({
+        beforeActivate: function (e, ui) {
+            window.location = ui.newTab.find("a").attr("href");
+            return false;
+        },
+        beforeLoad: function () {
+            return false;
+        },
+        active: @selectedIndex
+    });
+</script>
