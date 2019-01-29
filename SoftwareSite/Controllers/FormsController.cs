@@ -8,8 +8,12 @@ namespace Emdat.SoftwareSite.Controllers
 {
     public class FormsController : Controller
     {
-        // GET: Forms
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult PTPolicy()
         {
             return View();
         }

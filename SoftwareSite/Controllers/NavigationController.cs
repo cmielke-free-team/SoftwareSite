@@ -12,12 +12,11 @@ namespace Emdat.SoftwareSite.Controllers
         [ChildActionOnly]
         public ActionResult Tabs(string currentTab = "Home")
         {
-            string[] tabNames = { "Home", "InSync", "Mobile", "InScribe", "ShadowLink", "ShadowPrint", "Tools", "Forms", "Support" };
+            string[] tabNames = { "Home", "InSync", "Mobile", "InScribe", "ShadowLink", "ShadowPrint", "Tools", "Forms" };
             var tabs = (from t in tabNames
                         select new MenuItem
                         {
                             Text = t,
-                            //NavigateUrl = $"#{t}",
                             NavigateUrl = Url.Action("Index", t),
                             Selected = string.Equals(currentTab, t)
                         }).ToList();

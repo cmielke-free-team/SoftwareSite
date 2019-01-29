@@ -36,7 +36,7 @@
             @if (Model.ShowVersionHistory)
             {
             <td>
-                <a href="@Url.Action("VersionHistory", new { majorVersion = version.MajorVersionNumber })">Version History</a>
+                @Html.ActionLink("Version History", "VersionHistory", null, null, null, version.VersionNumber, null, null)
             </td>
             }
         </tr>

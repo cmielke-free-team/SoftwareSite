@@ -1,6 +1,20 @@
-﻿@{
+﻿@model Emdat.SoftwareSite.Models.MobileViewModel
+@{
     ViewBag.Title = "Mobile";
     ViewBag.CurrentTab = "Mobile";
     Layout = "~/Views/Shared/_Master.cshtml";
 }
-Mobile
+<div class="grid-box middle">
+    <fieldset>
+        <legend>Mobile</legend>
+        <p>@Model.Description</p>
+        <ul>
+            @foreach(var manualLink in Model.ManualLinks)
+            {
+                <li>
+                    <a href="@manualLink.NavigateUrl">@manualLink.Text</a>
+                </li>
+            }
+        </ul>
+    </fieldset>
+</div>

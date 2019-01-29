@@ -1,0 +1,22 @@
+﻿@model Emdat.SoftwareSite.Models.ApplicationViewModel
+
+@{
+    ViewBag.Title = $"{Model.ApplicationName} Version History";
+    ViewBag.CurrentTab = Model.ApplicationCode;
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<div class="grid-box middle">
+    <fieldset>
+        <legend>@Model.ApplicationName Version History</legend>
+        @foreach (var version in Model.VersionInformation.Versions)
+        {
+            <p id="@version.VersionNumber">
+                <b>Version @version.VersionNumber</b>
+                @foreach (var releaseNote in version.ReleaseNotes)
+                {
+                    <br />@releaseNote
+                }
+            </p>
+        }
+    </fieldset>
+</div>

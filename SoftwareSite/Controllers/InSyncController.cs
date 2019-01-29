@@ -33,11 +33,6 @@ namespace Emdat.SoftwareSite.Controllers
             {
                 new HyperLink
                 {
-                    NavigateUrl = Url.Action("SupportedInterfaces"),
-                    Text = "Alternative Recording and Interfacing Methods"
-                },
-                new HyperLink
-                {
                     NavigateUrl = "http://www.startstop.com/emdat",
                     Text = "Purchase a Recorder"
                 },
@@ -67,6 +62,8 @@ namespace Emdat.SoftwareSite.Controllers
             var model = new InSyncViewModel
             {
                 AdditionalLinks = additionalLinks,
+                ApplicationCode = APPLICATION_CODE,
+                ApplicationName = application.Name,
                 SupportedRecorderWarning = "Some older model recorders are not supported by a 64 bit version of Windows. Check with the recorder manufacturer for compatibility to your system before making a selection.",
                 SupportedOperatingSystemWarning = application.SupportedOperatingSystemWarning,
                 VersionInformation = new ApplicationVersions
@@ -81,7 +78,24 @@ namespace Emdat.SoftwareSite.Controllers
 
         public ActionResult VersionHistory()
         {
-            return View();
+            var dataContext = new DataContext();
+            var application = dataContext.GetApplication(APPLICATION_CODE).FirstOrDefault();
+            var model = new ApplicationViewModel
+            {
+                ApplicationCode = APPLICATION_CODE,
+                ApplicationName = application.Name,
+                VersionInformation = new ApplicationVersions
+                {
+                    Versions = from v in dataContext.GetApplicationVersions(APPLICATION_CODE)
+                               select new ApplicationVersion
+                               {
+                                   VersionNumber = v.VersionNumber,
+                                   ReleaseNotes = v.ReleaseNotes
+                               }
+                }
+            };
+
+            return View(model);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Emdat.SoftwareSite.DataAccess;
+using Emdat.SoftwareSite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,23 @@ namespace Emdat.SoftwareSite.Controllers
 {
     public class ToolsController : Controller
     {
-        // GET: Tools
         public ActionResult Index()
         {
-            return View();
+            var dataContext = new DataContext();
+
+            var model = new ToolsViewModel
+            {
+                Tools = from t in dataContext.GetTools()
+                        select new Tool
+                        {
+                            InstallerFileName = t.InstallerFileName,
+                            ManualPdfFileName = t.ManualPdfFileName,
+                            ManualWordFileName = t.ManualWordFileName,
+                            Name = t.Name
+                        }
+            };
+
+            return View(model);
         }
     }
 }

@@ -1,6 +1,13 @@
-﻿@{
+﻿@model Emdat.SoftwareSite.Models.ApplicationViewModel
+@{
     ViewBag.Title = "ShadowPrint";
-    ViewBag.CurrentTab = "ShadowPrint";
+    ViewBag.CurrentTab = Model.ApplicationCode;
     Layout = "~/Views/Shared/_Master.cshtml";
 }
-ShadowPrint
+<div class="grid-box middle">
+    <fieldset>
+        <legend>@Model.ApplicationName Software Download</legend>
+        @Html.DisplayFor(m => m.SupportedOperatingSystemWarning, "Warning")
+        @Html.DisplayFor(m => m.VersionInformation)
+    </fieldset>
+</div>

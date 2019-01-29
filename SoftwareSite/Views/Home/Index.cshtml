@@ -3,11 +3,13 @@
     ViewBag.CurrentTab = "Home";
     Layout = "~/Views/Shared/_Master.cshtml";
 }
-<div class="header">Welcome to the Software Download Site</div>
-<p>This is where you can download our software and get additional information about our products.</p>
-<p><b>InSync:</b> is the application used to upload dictations into the system.</p>
-<p><b>InScribe:</b> is the application that Transcriptionists use to type transcriptions.</p>
-<p><b>Tools:</b> are tools to help utilize our software.</p>
-<p><b>Forms:</b> is where you can get the signature forms, client build documents, file examples, and other documents.</p>
-<p><b>Support:</b> is where you can get help and fixes for our products.</p>
-<p><b>FAQ:</b> is a list of questions and answers about our system.</p>
+<div class="grid-box middle">
+    <fieldset>
+        <legend>Welcome to the Software Download Site</legend>
+        <p>This is where you can download our software and get additional information about our products.</p>
+        <p><b>@Html.ActionLink("InSync:", "Index", "InSync")</b> is the application used to upload dictations into the system.</p>
+        <p><b>@Html.ActionLink("InScribe:", "Index", "InScribe")</b> is the application that Transcriptionists use to type transcriptions.</p>
+        <p><b>@Html.ActionLink("Tools:", "Index", "Tools")</b> are tools to help utilize our software.</p>
+        <p><b>@Html.ActionLink("Forms:", "Index", "Forms")</b> is where you can get the signature forms, client build documents, file examples, and other documents.</p>
+    </fieldset>
+</div>

@@ -2,22 +2,22 @@
 
 @{
     ViewBag.Title = "InSync";
-    ViewBag.CurrentTab = "InSync";
+    ViewBag.CurrentTab = Model.ApplicationCode;
     Layout = "~/Views/Shared/_Master.cshtml";
 }
-<div class="grid-box">
+<div class="grid-box left">
     <fieldset>
-        <legend>InSync Software Download</legend>
+        <legend>@Model.ApplicationName Software Download</legend>
         @Html.DisplayFor(m => m.SupportedOperatingSystemWarning, "Warning")
-        <p>One of the steps of installing and configuring your recorder will direct you to download the InSync software, found below.</p>
+        <p>One of the steps of installing and configuring your recorder will direct you to download the @Model.ApplicationName software, found below.</p>
         @Html.DisplayFor(m => m.VersionInformation)
     </fieldset>
 </div>
-<div class="grid-box">
+<div class="grid-box right">
     <fieldset>
         <legend>Hand Held Recorder Instructions</legend>
         <p>If you are using an Olympus recorder, the installation and configuration process depends on which DSS Player software came with your recorder. Use the table below to find the appropriate Installation Manual for your recorder and software type, which can be located on the software CD that is packaged with your recorder.</p>
-        <p><a href="#">List of Supported Recorders</a></p>
+        <p><a href="@Url.Action("Index", "Download", new { fileName = "Emdat%20Supported%20Recorders%20as%20of%20Apr%202018.docx" })">List of Supported Recorders</a></p>
         @Html.DisplayFor(m => m.SupportedRecorderWarning, "Warning")
     </fieldset>
 </div>
