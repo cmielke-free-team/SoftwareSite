@@ -74,6 +74,10 @@ namespace Emdat.SoftwareSite.DataAccess
             public string VersionNumber { get; set; }
             public string InstallerFileName { get; set; }
             public string InstallerFileNameMsi { get; set; }
+            public string InstallerFileNameUK { get; set; }
+            public string InstallerFileNameUKMsi { get; set; }
+            public string InstallerFileNameCanada { get; set; }
+            public string InstallerFileNameCanadaMsi { get; set; }
             public string ManualPdfFileName { get; set; }
             public string ManualWordFileName { get; set; }
         }
@@ -90,6 +94,10 @@ namespace Emdat.SoftwareSite.DataAccess
                         {
                             InstallerFileName = "InSyncSetup_v6.6.18304.exe",
                             InstallerFileNameMsi = "InSyncSetup_v6.6.18304.msi",
+                            InstallerFileNameCanada = "InSyncSetup_v6.6.18304.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_v6.6.18304.msi",
+                            InstallerFileNameUK = "InSyncSetup_v6.6.18304.UK.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_v6.6.18304.UK.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "InSync6 Manual.pdf",
                             ManualWordFileName = "InSync6 Manual.docx",
@@ -105,6 +113,10 @@ namespace Emdat.SoftwareSite.DataAccess
                         {
                             InstallerFileName = "InScribeSetup_v6.15.18212.exe",
                             InstallerFileNameMsi = "InScribeSetup_v6.15.18212.msi",
+                            InstallerFileNameCanada = "InScribeSetup_v6.15.18212.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_v6.15.18212.msi",
+                            InstallerFileNameUK = "InScribeSetup_v6.15.18212.UK.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_v6.15.18212.UK.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "InScribe%206%20Manual%2007292015.pdf",
                             ManualWordFileName = "InScribe%206%20Manual%2007292015.docx",
@@ -119,6 +131,8 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "ShadowLinkSetup.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup.UK.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "ShadowLink2%20User%20Guide_6_2016.pdf",
                             ManualWordFileName = "ShadowLink2%20User%20Guide_6_2016.docx",
@@ -133,6 +147,8 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "ShadowPrintSetup.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup.UK.exe",
                             MajorVersionNumber = "2",
                             ManualWordFileName = "ShadowPrint%20User%20Guide.doc",
                             VersionNumber = "2.2"

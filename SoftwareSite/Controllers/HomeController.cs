@@ -7,9 +7,8 @@ using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : SoftwareSiteControllerBase
     {
-        // GET: Home
         public ActionResult Index()
         {
             return View();

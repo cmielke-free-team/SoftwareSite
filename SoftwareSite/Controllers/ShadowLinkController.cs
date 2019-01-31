@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class ShadowLinkController : Controller
+    public class ShadowLinkController : SoftwareSiteControllerBase
     {
         private const string APPLICATION_CODE = "ShadowLink";
 
@@ -20,8 +20,8 @@ namespace Emdat.SoftwareSite.Controllers
             var versions = from v in dataContext.GetLatestApplicationVersions(APPLICATION_CODE)
                            select new ApplicationVersion
                            {
-                               InstallerFileName = v.InstallerFileName,
-                               InstallerFileNameMsi = v.InstallerFileNameMsi,
+                               InstallerFileName = GetInstallerFileName(v),
+                               InstallerFileNameMsi = GetInstallerFileNameMsi(v),
                                MajorVersionNumber = v.MajorVersionNumber,
                                ManualPdfFileName = v.ManualPdfFileName,
                                ManualWordFileName = v.ManualWordFileName,

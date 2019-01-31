@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class NavigationController : Controller
+    public class NavigationController : SoftwareSiteControllerBase
     {
         [ChildActionOnly]
         public ActionResult Tabs(string currentTab = "Home")

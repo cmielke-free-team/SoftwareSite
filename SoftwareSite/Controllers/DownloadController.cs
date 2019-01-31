@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class DownloadController : Controller
+    public class DownloadController : SoftwareSiteControllerBase
     {
         private static string BASE_URL = ConfigurationManager.AppSettings["DownloadsBaseUrl"];
 

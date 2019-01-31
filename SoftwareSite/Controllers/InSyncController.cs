@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class InSyncController : Controller
+    public class InSyncController : SoftwareSiteControllerBase
     {
         private const string APPLICATION_CODE = "InSync";
 
@@ -21,8 +21,8 @@ namespace Emdat.SoftwareSite.Controllers
             var versions = from v in dataContext.GetLatestApplicationVersions(APPLICATION_CODE)
                            select new ApplicationVersion
                            {
-                               InstallerFileName = v.InstallerFileName,
-                               InstallerFileNameMsi = v.InstallerFileNameMsi,
+                               InstallerFileName = GetInstallerFileName(v),
+                               InstallerFileNameMsi = GetInstallerFileNameMsi(v),
                                MajorVersionNumber = v.MajorVersionNumber,
                                ManualPdfFileName = v.ManualPdfFileName,
                                ManualWordFileName = v.ManualWordFileName,

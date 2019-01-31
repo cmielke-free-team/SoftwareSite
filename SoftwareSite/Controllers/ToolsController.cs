@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class ToolsController : Controller
+    public class ToolsController : SoftwareSiteControllerBase
     {
         public ActionResult Index()
         {

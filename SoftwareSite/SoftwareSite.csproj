@@ -172,6 +172,7 @@
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\ShadowLinkController.cs" />
     <Compile Include="Controllers\ShadowPrintController.cs" />
+    <Compile Include="Controllers\SoftwareSiteControllerBase.cs" />
     <Compile Include="Controllers\ToolsController.cs" />
     <Compile Include="DataAccess\DataContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -207,6 +208,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Download\" />
+    <Folder Include="Views\SoftwareSiteControllerBase\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
