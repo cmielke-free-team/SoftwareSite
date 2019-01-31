@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Forms";
+    ViewBag.CurrentTab = "Forms";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<div class="grid-box left">
+    <fieldset>
+        <legend>Forms &amp; Documents</legend>
+        <p>@Html.ActionLink("ETRAIN Instructions", "Index", "Download", new { fileName = "etrain%20Instructions%20for%20InScribe.doc" }, null) - Transcriptionist Instructions for Using E-Train on InScribe.</p>
+        <p>@Html.ActionLink("Graphical Signature Form (PDF)", "Index", "Download", new { fileName = "Graphical%20Signature%20Form%202015.pdf" }, null) - This is the electronic signature capture form.<br/><span class="warning">(Please do not modify signature form)</span></p>
+        <p>@Html.ActionLink("Client Print Template Build/Change Policy", "PTPolicy")</p>
+        <p>@Html.ActionLink("File Format for Uploading Patient and Associate Files (Word)", "Index", "Download", new { fileName = "Emdat_File_Layout.doc" }, null)</p>
+        <p>@Html.ActionLink("QA Ratings and Feedback Manual", "Index", "Download", new { fileName = "InScribe%20QA%20Ratings%20and%20Feedback%20Manual.pdf" }, null)</p>
+    </fieldset>
+</div>
+<div class="grid-box right">
+    <fieldset>
+        <legend>Client Implementation Documents</legend>
+        <p>@Html.ActionLink("CLIENT BUILD INFORMATION REQUEST FORM (Word)", "Index", "Download", new { fileName = "Client%20Information%20Request%20Form%202015.doc" }, null)</p>
+        <p>@Html.ActionLink("Client Implementation Overview - New Client (Word)", "Index", "Download", new { fileName = "Emdat%20Implementation%20Overview%202015.doc" }, null)</p>
+    </fieldset>
+</div>

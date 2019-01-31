@@ -1,0 +1,32 @@
+﻿@model Emdat.SoftwareSite.Models.InScribeViewModel
+@{
+    ViewBag.Title = "InScribe";
+    ViewBag.CurrentTab = Model.ApplicationCode;
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<div class="grid-box left">
+    <fieldset>
+        <legend>@Model.ApplicationName Transcription Software Download</legend>
+        @Html.DisplayFor(m => m.SupportedOperatingSystemWarning, "Warning")
+        @Html.DisplayFor(m => m.VersionInformation)
+        <p>While some end users utilize third party software with @Model.ApplicationName, it is not officially supported. This includes third party audio players which have their own foot pedal and third party word expanders. Please use caution if using any third party software.</p>
+    </fieldset>
+</div>
+<div class="grid-box right">
+    <fieldset>
+        <legend>@Model.ApplicationName Training Materials</legend>
+        <p>We now provide training files that can be loaded on an @Model.ApplicationName workstation and run locally, using your MT login credentials. To use these files, install the training files from the link below. When you next run @Model.ApplicationName, on the Login screen expand the Options area and check the box to "Login in Training Mode". When in training mode, you will not receive production files and you will be able to use the training files you've installed.</p>
+    </fieldset>
+</div>
+<div class="grid-box right">
+    <fieldset>
+        <legend>@Model.ApplicationName Training Files</legend>
+        <ul>
+            @foreach(var link in Model.TrainingFileLinks)
+            {
+                <li><a href="@link.NavigateUrl">@link.Text</a></li>
+            }
+        </ul>
+    </fieldset>
+</div>
+@Html.DisplayFor(m => m.AdditionalLinks, "AdditionalLinks")

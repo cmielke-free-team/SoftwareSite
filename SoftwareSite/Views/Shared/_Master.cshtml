@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="@Url.Content("~/Content/tabs.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/user-menu.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/jquery-ui-1.8.6.custom.min.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("~/Content/font-awesome.css")" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.3.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    @Html.Action("Header", "Home")
+    <div class="emdat-master-tabs">
+        <div class="tabs-container">
+            @Html.Action("Tabs", "Navigation", new { currentTab = ViewBag.CurrentTab })
+        </div>
+    </div>
+    <div class="master-frame">
+        <div class="emdat-content-body">
+            @RenderBody()
+        </div>
+        @Html.Action("Footer", "Home")
+    </div>
+    @* Spacer div to make sure the page is tall enough that the footer doesn't float over the content when scrolled all the way to the bottom *@
+    <div style="clear:both; height: 10px"></div>
+    @RenderSection("scripts", false)
+</body>
+</html>
