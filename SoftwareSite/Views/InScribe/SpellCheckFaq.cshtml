@@ -1,0 +1,18 @@
+﻿@model Emdat.SoftwareSite.Models.InScribeViewModel
+@{
+    ViewBag.Title = "Spell Checker FAQ";
+    ViewBag.CurrentTab = "InScribe";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<div class="grid-box middle">
+    <fieldset>
+        <legend>Spell Checker FAQ</legend>
+        <p><b>The suggestions that are shown in the Check Spelling dialog during spell check don't make sense. For example, when "accepted" was misspelled, the suggestion was "crepe"?</b><br/>This may occur when the Suggestions setting is "Fast but less accurate". Execute spell check from the Emdat editor. When a word flags and the Check Spelling dialog displays, click the Options button and change the Suggestions radio button to "Slow but accurate".</p>
+        <p><b>I added a word to my User Dictionary and now it's not there?</b><br/>View Words from the Spelling and Typing Options dialog does not list the added words in alphabetical order and may give the impression that the word is missing. If you don't want to scroll through the entire User Dictionary Word List, you can also open the userdic.tlx file with Notepad and use the Find function to verify that a given word is in the dictionary. To do this click on the Start button, select All Programs, select Accessories, then Notepad. With Notepad open, select the File menu, then Open. When the Open dialog displays, go to the File Types drop down menu and select All Files (*.*), then browse to the following folder location: Program Files\Emdat\Spellcheck\vn.n.nnn\An\SSCE\lex. (Note: for the vn.n.nn folder, you may have a few of these, double click on the one with the highest number) select userdic.tlx, then click the Open button. When the user dictionary opens, click on the Edit menu, then Find to bring up the Find dialog and search for your word.</p>
+        <p><b>The suggestions for hyphenated words have an extra space. For example, when "18-year-old" is flagged by spell check, the suggestion is "18- year- old"?</b><br/>This will occur when "Split Hyphenated Words for Spelling" is unchecked in the Spelling and Typing Options dialog. Check the box and suggestions will be provided based on each individual segment.</p>
+        <p><b>Spell check isn't flagging misspelled words. For example, when "Zocor" was misspelled as "Zocorr", it passed the spell check?</b><br/>This will occur when "Ignore Capitalized Words" is checked in the Spelling and Typing Options dialog. Remove the check box and incorrectly spelled capitalized words will be flagged.</p>
+        <p><b>Spell check isn't flagging misspelled words. For example, when "cabinet" was misspelled as "cabnet", it passed the spell check?</b><br/>This will occur when "Check Word Parts" is checked in the Spelling and Typing Options dialog. Remove the check box and spell check will look at the entire word instead of breaking it down into parts.</p>
+        <p><b>I upgraded InScribe and spell check is acting differently. Words which would have flagged before are not and words are flagging that didn't use to?</b><br/>Spell check has changed and is now looking at each word in context to its surrounding words. This provides for improved reliability and also conforms more closely to spell check rules used by popular word processing programs such as Microsoft Word.</p>
+        <p><b>I upgraded InScribe and my custom dictionary isn't working?</b><br/>The installation program does copy custom dictionaries to the new spell check folder. However, you will still need to Add the dictionary from the Spelling and Typing Option dialog.</p>
+    </fieldset>
+</div>
