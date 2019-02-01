@@ -1,9 +1,7 @@
 ﻿using Emdat.SoftwareSite.DataAccess;
 using Emdat.SoftwareSite.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
 
@@ -31,11 +29,6 @@ namespace Emdat.SoftwareSite.Controllers
 
             var additionalLinks = new List<HyperLink>
             {
-                new HyperLink
-                {
-                    NavigateUrl = "http://www.startstop.com/emdat",
-                    Text = "Purchase a Recorder"
-                },
                 new HyperLink
                 {
                     NavigateUrl = "http://www.olympusamerica.com/cpg_section/software_results.asp?id=1179&os=w",

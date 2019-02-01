@@ -21,7 +21,7 @@
 <div class="grid-box right">
     <fieldset>
         <legend>@Model.ApplicationName Training Files</legend>
-        <ul>
+        <ul class="dashed">
             @foreach(var link in Model.TrainingFileLinks)
             {
                 <li><a href="@link.NavigateUrl">@link.Text</a></li>
