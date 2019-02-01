@@ -227,6 +227,7 @@ body, font, td, textarea {
             letter-spacing: 1px;
             padding-left: 3px;
             padding-right: 3px;
+            outline: none;
         }
 
         .emdat-master-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected,
@@ -432,17 +433,17 @@ table.grid {
         background-color: #e5ebeb;
     }
 
-ul {
+ul.dashed {
     margin: 0;
     padding: 0;
     list-style: none outside none;
 }
 
-    ul > li {
+    ul.dashed > li {
         line-height: 1.75;
         text-indent: -5px;
     }
 
-        ul > li:before {
+        ul.dashed > li:before {
             content: "- ";
         }
