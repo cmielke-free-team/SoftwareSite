@@ -26,11 +26,11 @@
                         <td>
                             @if (!string.IsNullOrEmpty(tool.ManualPdfFileName))
                             {
-                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualPdfFileName })" style="text-decoration: none;"><i class="fas fa-file-pdf-o"></i></a>
+                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualPdfFileName })" class="nodecor" style="padding-right: 10px"><i class="far fa-file-pdf"></i></a>
                             }
                             @if (!string.IsNullOrWhiteSpace(tool.ManualWordFileName))
                             {
-                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualWordFileName })" style="text-decoration: none;"><i class="fas fa-file-word-o"></i></a>
+                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualWordFileName })" class="nodecor"><i class="far fa-file-word"></i></a>
                             }
                         </td>
                     }
