@@ -19,8 +19,7 @@ body, font, td, textarea {
 
 .master-header {
     background-color: #1A6B96;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
     overflow: hidden;
     color: white;
     font-size: 10pt;
@@ -35,7 +34,8 @@ body, font, td, textarea {
     }
 
     .master-header .system-logo {
-        max-height: 35px;
+        max-height: 30px;
+        vertical-align: middle;
     }
 
     .master-header .app-logo {
@@ -60,7 +60,7 @@ body, font, td, textarea {
 .master-header-right > div {
     float: left;
     width: 33.3%;
-    min-height: 40px;
+    min-height: 30px;
 }
 
     .master-header-right > div:not(:first-child) {
@@ -227,6 +227,7 @@ body, font, td, textarea {
             letter-spacing: 1px;
             padding-left: 3px;
             padding-right: 3px;
+            outline: none;
         }
 
         .emdat-master-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected,
@@ -308,6 +309,10 @@ a.orange:hover {
     color: #E5EBEB;
 }
 
+a.nodecor {
+    text-decoration: none;
+}
+
 .emdat-content-body {
     margin: 8px;
 }
@@ -330,18 +335,16 @@ div.header {
     color: #ff001a;
 }
 
-i.fas {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-size: 18px;
+.fas, .far {
+    font-size: 13pt;
     vertical-align: sub;
 }
 
-i.fa-file-pdf-o {
+i.fa-file-pdf {
     color: #ff001a;
 }
 
-i.fa-file-word-o {
+i.fa-file-word {
     color: #1A6B96;
 }
 
@@ -376,7 +379,8 @@ i.fa-film {
 
 fieldset {
     border: 1px solid #626D6F;
-    margin: 15px 5px;
+    margin: 0 15px 10px 15px;
+    padding: 5px 20px 15px 20px;
 }
 
     fieldset legend {
@@ -417,9 +421,9 @@ table.grid {
         text-align: center;
     }
 
-    table.grid td.left {
-        text-align: left;
-    }
+        table.grid td.left {
+            text-align: left;
+        }
 
     table.grid tr + tr th, table.grid tr + tr td {
         border-top: 1px solid #c4caca;
@@ -428,3 +432,18 @@ table.grid {
     table.grid tr:nth-child(odd) {
         background-color: #e5ebeb;
     }
+
+ul.dashed {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+
+    ul.dashed > li {
+        line-height: 1.75;
+        text-indent: -5px;
+    }
+
+        ul.dashed > li:before {
+            content: "- ";
+        }
