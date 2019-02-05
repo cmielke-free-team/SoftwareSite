@@ -9,7 +9,7 @@ namespace Emdat.SoftwareSite.Controllers
         private static string BASE_URL = ConfigurationManager.AppSettings["DownloadsBaseUrl"];
 
         /// <summary>
-        /// Redirect to the downloads folder for now, in the future this could pull from the database or cloud storage or we may point directly to cloud storage and get rid of this controller.
+        /// Redirect to the download folder for now, in the future this could pull from the database or cloud storage or we may point directly to cloud storage and get rid of this controller.
         /// </summary>
         public ActionResult Index(string fileName)
         {

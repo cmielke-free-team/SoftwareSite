@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.UI.WebControls;
 
 namespace Emdat.SoftwareSite.Models
@@ -14,6 +11,7 @@ namespace Emdat.SoftwareSite.Models
     public class Tool
     {
         public string Name { get; set; }
+        public string InstallerPath { get; set; }
         public string InstallerFileName { get; set; }
         public string ManualPdfFileName { get; set; }
         public string ManualWordFileName { get; set; }
