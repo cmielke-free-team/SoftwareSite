@@ -20,17 +20,17 @@
             @foreach (var tool in Model.Tools)
             {
                 <tr>
-                    <td class="left"><a href="@Url.Action("Index", "Download", new { fileName = tool.InstallerFileName })">@tool.Name</a></td>
+                    <td class="left"><a href="@Url.Action("Index", tool.InstallerPath, new { fileName = tool.InstallerFileName })">@tool.Name</a></td>
                     @if (showManualColumn)
                     {
                         <td>
                             @if (!string.IsNullOrEmpty(tool.ManualPdfFileName))
                             {
-                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualPdfFileName })" class="nodecor" style="padding-right: 10px"><i class="far fa-file-pdf"></i></a>
+                                <a href="@Url.Action("Index", tool.InstallerPath, new { fileName = tool.ManualPdfFileName })" class="nodecor" style="padding-right: 10px"><i class="far fa-file-pdf"></i></a>
                             }
                             @if (!string.IsNullOrWhiteSpace(tool.ManualWordFileName))
                             {
-                                <a href="@Url.Action("Index", "Download", new { fileName = tool.ManualWordFileName })" class="nodecor"><i class="far fa-file-word"></i></a>
+                                <a href="@Url.Action("Index", tool.InstallerPath, new { fileName = tool.ManualWordFileName })" class="nodecor"><i class="far fa-file-word"></i></a>
                             }
                         </td>
                     }

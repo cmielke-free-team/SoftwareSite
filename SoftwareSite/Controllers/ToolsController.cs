@@ -16,6 +16,7 @@ namespace Emdat.SoftwareSite.Controllers
                 Tools = from t in dataContext.GetTools()
                         select new Tool
                         {
+                            InstallerPath = t.InstallerPath,
                             InstallerFileName = t.InstallerFileName,
                             ManualPdfFileName = t.ManualPdfFileName,
                             ManualWordFileName = t.ManualWordFileName,
