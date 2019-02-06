@@ -368,6 +368,7 @@ namespace Emdat.SoftwareSite.DataAccess
         public class GetToolsRow
         {
             public string Name { get; set; }
+            public string InstallerPath { get; set; }
             public string InstallerFileName { get; set; }
             public string ManualPdfFileName { get; set; }
             public string ManualWordFileName { get; set; }
@@ -379,21 +380,25 @@ namespace Emdat.SoftwareSite.DataAccess
             {
                 new GetToolsRow
                 {
-                    InstallerFileName = "EmdatComponents.exe",
+                    InstallerPath = "Runtime",
+                    InstallerFileName = "RuntimeComponents.exe",
                     Name = "Runtime Components"
                 },
                 new GetToolsRow
                 {
-                    InstallerFileName = "EmdatComponents.msi",
+                    InstallerPath = "Runtime",
+                    InstallerFileName = "RuntimeComponents.msi",
                     Name = "Runtime Components (MSI)"
                 },
                 new GetToolsRow
                 {
+                    InstallerPath = "Download",
                     InstallerFileName = "AutoCorrect_AutoText.exe",
                     Name = "Word AutoCorrect to InScribe AutoText Converter"
                 },
                 new GetToolsRow
                 {
+                    InstallerPath = "Download",
                     InstallerFileName = "CSV_AutoText_Converter.exe",
                     ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",
                     ManualWordFileName = "CSV%20Autotext%20Converter.docx",
