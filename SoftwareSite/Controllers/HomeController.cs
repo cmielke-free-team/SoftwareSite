@@ -1,5 +1,6 @@
 ﻿using Emdat.SoftwareSite.Models;
 using System;
+using System.Diagnostics;
 using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
@@ -29,6 +30,16 @@ namespace Emdat.SoftwareSite.Controllers
                 ServerName = Environment.MachineName.ToUpperInvariant()
             };
             return View(model);
+        }
+        /// <summary>
+        /// Primitive page that F5 uses to verify corresponding app pool is still up and running
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult HealthCheck()
+        {
+            string appPoolName = Environment.GetEnvironmentVariable("APP_POOL_ID", EnvironmentVariableTarget.Process);
+            TimeSpan uptime = DateTime.Now - Process.GetCurrentProcess().StartTime;
+            return Content($"The <strong>{appPoolName}</strong> application pool has been up and running for <strong>{uptime.ToString(@"hh\:mm\:ss")}</strong>.", "text/html");
         }
     }
 }
