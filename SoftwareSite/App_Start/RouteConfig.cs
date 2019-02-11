@@ -9,6 +9,10 @@ namespace Emdat.SoftwareSite
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Health_Check",
+                "HealthCheck",
+                new { controller = "Home", action = "HealthCheck" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
