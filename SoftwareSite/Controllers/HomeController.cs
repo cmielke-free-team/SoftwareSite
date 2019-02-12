@@ -40,9 +40,10 @@ namespace Emdat.SoftwareSite.Controllers
         {
             string appPoolName = Environment.GetEnvironmentVariable("APP_POOL_ID", EnvironmentVariableTarget.Process);
             TimeSpan uptime = DateTime.Now - Process.GetCurrentProcess().StartTime;
+            FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location);
             return Content($@"The <strong>{appPoolName}</strong> application pool has been up and running on 
-                <strong>{Environment.MachineName}</strong> for <strong>{uptime.ToString(@"hh\:mm\:ss")}</strong>.<br><br>
-                Build: {Assembly.GetExecutingAssembly().GetName().Version.ToString()}", "text/html");
+                        <strong>{Environment.MachineName}</strong> for <strong>{uptime.ToString(@"hh\:mm\:ss")}</strong>.<br><br>
+                        Build: {fileVersionInfo.FileVersion}", "text/html");
         }
     }
 }
