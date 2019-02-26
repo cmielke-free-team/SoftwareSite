@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <parameters>
 	<setParameter name="IIS Web Application Name" value="Emdat/Software" />
+  <parameter name="ApplicationInsights.InstrumentationKey" defaultValue="%(EMDAT_ENV_TELEMETRY_SOFTWARESITE_INSTRUMENTATIONKEY)%">
+    <parameterEntry kind="XmlFile" scope="ApplicationInsights\.config$" match="//*[local-name()='InstrumentationKey']/text()" />
+  </parameter>
 </parameters>
