@@ -4,4 +4,7 @@
   <parameter name="ApplicationInsights.InstrumentationKey" defaultValue="%(EMDAT_ENV_TELEMETRY_SOFTWARESITE_INSTRUMENTATIONKEY)%">
     <parameterEntry kind="XmlFile" scope="ApplicationInsights\.config$" match="//*[local-name()='InstrumentationKey']/text()" />
   </parameter>
+  <parameter name="SoftwareDownloadPath" defaultValue="%(EMDAT_ENV_PATHS_SOFTWAREDOWNLOADSHARE)%">
+    <parameterEntry kind="XmlFile" scope="web\.config$" match="/configuration/appSettings/add[@key='DownloadsShare']/@value" />
+  </parameter>
 </parameters>
