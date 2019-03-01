@@ -90,16 +90,16 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_v6.6.18304.exe",
-                            InstallerFileNameMsi = "InSyncSetup_v6.6.18304.msi",
-                            InstallerFileNameCanada = "InSyncSetup_v6.6.18304.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_v6.6.18304.msi",
-                            InstallerFileNameUK = "InSyncSetup_v6.6.18304.UK.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_v6.6.18304.UK.msi",
+                            InstallerFileName = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19053_30152.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "InSync6 Manual.pdf",
                             ManualWordFileName = "InSync6 Manual.docx",
-                            VersionNumber = "6.6.18304"
+                            VersionNumber = "6.7.19053"
                         }
                     };
                 }
@@ -109,16 +109,16 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_v6.15.18212.exe",
-                            InstallerFileNameMsi = "InScribeSetup_v6.15.18212.msi",
-                            InstallerFileNameCanada = "InScribeSetup_v6.15.18212.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_v6.15.18212.msi",
-                            InstallerFileNameUK = "InScribeSetup_v6.15.18212.UK.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_v6.15.18212.UK.msi",
+                            InstallerFileName = "InScribeSetup_6_16_19060_30102.exe",
+                            InstallerFileNameMsi = "InScribeSetup_6_16_19060_30102.msi",
+                            InstallerFileNameCanada = "InScribeSetup_6_16_19060_30102.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_6_16_19060_30102.msi",
+                            InstallerFileNameUK = "InScribeSetup_6_16_19060_30102.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_6_16_19060_30102.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "InScribe%206%20Manual%2007292015.pdf",
                             ManualWordFileName = "InScribe%206%20Manual%2007292015.docx",
-                            VersionNumber = "6.15.18212"
+                            VersionNumber = "6.16.19060"
                         }
                     };
                 }
@@ -128,13 +128,13 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup.UK.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_8_19060_41188.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19060_41188.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19060_41188.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "ShadowLink2%20User%20Guide_6_2016.pdf",
                             ManualWordFileName = "ShadowLink2%20User%20Guide_6_2016.docx",
-                            VersionNumber = "2.7"
+                            VersionNumber = "2.8"
                         }
                     };
                 }
@@ -144,12 +144,12 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup.UK.exe",
+                            InstallerFileName = "ShadowPrintSetup_2_3_19060_39762.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19060_39762.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19060_39762.exe",
                             MajorVersionNumber = "2",
                             ManualWordFileName = "ShadowPrint%20User%20Guide.doc",
-                            VersionNumber = "2.2"
+                            VersionNumber = "2.3"
                         }
                     };
                 }
@@ -174,6 +174,15 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.7.19053",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Updated user interface.",
+                                "Added support for new regions."                                
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.6.18304",
@@ -251,6 +260,15 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.16.19060",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Updated user interface.",
+                                "Added support for new regions."
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.15.18212",
