@@ -90,16 +90,16 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_v6.6.18304.exe",
-                            InstallerFileNameMsi = "InSyncSetup_v6.6.18304.msi",
-                            InstallerFileNameCanada = "InSyncSetup_v6.6.18304.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_v6.6.18304.msi",
-                            InstallerFileNameUK = "InSyncSetup_v6.6.18304.UK.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_v6.6.18304.UK.msi",
+                            InstallerFileName = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_7_19053_30152.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19053_30152.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "InSync6 Manual.pdf",
                             ManualWordFileName = "InSync6 Manual.docx",
-                            VersionNumber = "6.6.18304"
+                            VersionNumber = "6.7.19053"
                         }
                     };
                 }
@@ -174,6 +174,15 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.7.19053",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Updated user interface.",
+                                "Added support for new regions."                                
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.6.18304",
@@ -251,6 +260,15 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.16.19060",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Updated user interface.",
+                                "Added support for new regions."
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.15.18212",
