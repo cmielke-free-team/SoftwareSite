@@ -128,9 +128,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19060_35630.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19060_35630.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19060_35630.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_8_19060_41188.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19060_41188.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19060_41188.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "ShadowLink2%20User%20Guide_6_2016.pdf",
                             ManualWordFileName = "ShadowLink2%20User%20Guide_6_2016.docx",
@@ -144,9 +144,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup_2_3_19060_29105.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19060_29105.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19060_29105.exe",
+                            InstallerFileName = "ShadowPrintSetup_2_3_19060_39762.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19060_39762.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19060_39762.exe",
                             MajorVersionNumber = "2",
                             ManualWordFileName = "ShadowPrint%20User%20Guide.doc",
                             VersionNumber = "2.3"
