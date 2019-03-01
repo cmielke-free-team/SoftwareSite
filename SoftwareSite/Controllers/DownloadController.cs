@@ -25,7 +25,7 @@ namespace Emdat.SoftwareSite.Controllers
                 string downloadFilePath = System.IO.Path.Combine(DownloadsShare, fileName);
                 if(System.IO.File.Exists(downloadFilePath))
                 {                    
-                    return File(downloadFilePath, "application/octet-stream");
+                    return File(downloadFilePath, "application/octet-stream", fileName);
                 }
             }
 
