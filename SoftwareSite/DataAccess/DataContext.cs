@@ -128,9 +128,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19059_35630.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19059_35630.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19059_35630.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_8_19060_35630.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19060_35630.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19060_35630.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "ShadowLink2%20User%20Guide_6_2016.pdf",
                             ManualWordFileName = "ShadowLink2%20User%20Guide_6_2016.docx",
