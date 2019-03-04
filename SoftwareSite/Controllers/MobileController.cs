@@ -15,12 +15,12 @@ namespace Emdat.SoftwareSite.Controllers
             {
                 new HyperLink
                 {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "Emdat%20Mobile%20iOS%20Manual%202014%20Final.pdf"}),
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual Jan 2019.pdf"}),
                     Text = "iPhone Installation and User Manual (PDF)"
                 },
                 new HyperLink
                 {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "Emdat%20Mobile%20iOS%20Manual%202014%20Final.docx"}),
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual Jan 2019.docx"}),
                     Text = "iPhone Installation and User Manual (DOC)"
                 }
             };
@@ -30,12 +30,12 @@ namespace Emdat.SoftwareSite.Controllers
                 manualLinks.Add(
                 new HyperLink
                 {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "Emdat%20Mobile%20Android%20Manual%202.4.0.pdf" }),
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual Jan 2019.pdf" }),
                     Text = "Android Installation and User Manual (PDF)"
                 });
                 manualLinks.Add(new HyperLink
                 {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "Emdat%20Mobile%20Android%20Manual%202.4.0.docx" }),
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual Jan 2019.docx" }),
                     Text = "Android Installation and User Manual (DOC)"
                 });
             }
