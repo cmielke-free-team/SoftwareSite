@@ -97,8 +97,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUK = "InSyncSetup_6_7_19053_30152.exe",
                             InstallerFileNameUKMsi = "InSyncSetup_6_7_19053_30152.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
-                            ManualWordFileName = "eScription One InSync Manual February 2019 .docx",
+                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",                            
                             VersionNumber = "6.7.19053"
                         }
                     };
@@ -116,8 +115,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUK = "InScribeSetup_6_16_19060_30102.exe",
                             InstallerFileNameUKMsi = "InScribeSetup_6_16_19060_30102.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
-                            ManualWordFileName = "eScription One InScribe Manual February 2019.docx",
+                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",                            
                             VersionNumber = "6.16.19060"
                         }
                     };
@@ -132,8 +130,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameCanada = "ShadowLinkSetup_2_8_19061_894.exe",
                             InstallerFileNameUK = "ShadowLinkSetup_2_8_19061_894.exe",
                             MajorVersionNumber = "2",
-                            ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",
-                            ManualWordFileName = "eScription One ShadowLink Manual Jan 2019.docx",
+                            ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",                            
                             VersionNumber = "2.8"
                         }
                     };
@@ -147,8 +144,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileName = "ShadowPrintSetup_2_3_19060_39762.exe",
                             InstallerFileNameCanada = "ShadowPrintSetup_2_3_19060_39762.exe",
                             InstallerFileNameUK = "ShadowPrintSetup_2_3_19060_39762.exe",
-                            MajorVersionNumber = "2",
-                            ManualWordFileName = "eScription One ShadowPrint Manual February 2019.docx",
+                            MajorVersionNumber = "2",                            
                             ManualPdfFileName = "eScription One ShadowPrint Manual February 2019.pdf",
                             VersionNumber = "2.3"
                         }
@@ -419,8 +415,7 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     InstallerPath = "Download",
                     InstallerFileName = "CSV_AutoText_Converter.exe",
-                    ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",
-                    ManualWordFileName = "CSV%20Autotext%20Converter.docx",
+                    ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",                    
                     Name = "CSV to InScribe AutoText Converter"
                 }
             };
