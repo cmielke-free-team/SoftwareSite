@@ -16,12 +16,7 @@ namespace Emdat.SoftwareSite.Controllers
                 new HyperLink
                 {
                     NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual Jan 2019.pdf"}),
-                    Text = "iPhone Installation and User Manual (PDF)"
-                },
-                new HyperLink
-                {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual Jan 2019.docx"}),
-                    Text = "iPhone Installation and User Manual (DOC)"
+                    Text = "iPhone Installation and User Manual"
                 }
             };
 
@@ -31,13 +26,8 @@ namespace Emdat.SoftwareSite.Controllers
                 new HyperLink
                 {
                     NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual Jan 2019.pdf" }),
-                    Text = "Android Installation and User Manual (PDF)"
-                });
-                manualLinks.Add(new HyperLink
-                {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual Jan 2019.docx" }),
-                    Text = "Android Installation and User Manual (DOC)"
-                });
+                    Text = "Android Installation and User Manual"
+                });                
             }
 
             var model = new MobileViewModel
