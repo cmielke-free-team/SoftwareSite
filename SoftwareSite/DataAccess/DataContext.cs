@@ -173,7 +173,7 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
-                            VersionNumber = "6.7.19053",
+                            VersionNumber = "6.7.19070",
                             ReleaseNotes = new List<string>
                             {
                                 "Updated user interface.",
