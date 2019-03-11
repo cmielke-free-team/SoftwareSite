@@ -90,15 +90,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_7_19053_30152.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19053_30152.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileName = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19070_34665.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",                            
-                            VersionNumber = "6.7.19053"
+                            VersionNumber = "6.7.19070"
                         }
                     };
                 }
@@ -126,9 +126,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19061_894.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19061_894.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19061_894.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19070_34621.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",                            
                             VersionNumber = "2.8"
