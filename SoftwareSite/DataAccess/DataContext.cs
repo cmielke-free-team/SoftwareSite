@@ -90,16 +90,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_7_19053_30152.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19053_30152.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_7_19053_30152.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19053_30152.msi",
+                            InstallerFileName = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_7_19070_34665.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19070_34665.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
-                            ManualWordFileName = "eScription One InSync Manual February 2019 .docx",
-                            VersionNumber = "6.7.19053"
+                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",                            
+                            VersionNumber = "6.7.19070"
                         }
                     };
                 }
@@ -109,16 +108,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_6_16_19060_30102.exe",
-                            InstallerFileNameMsi = "InScribeSetup_6_16_19060_30102.msi",
-                            InstallerFileNameCanada = "InScribeSetup_6_16_19060_30102.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_6_16_19060_30102.msi",
-                            InstallerFileNameUK = "InScribeSetup_6_16_19060_30102.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_6_16_19060_30102.msi",
+                            InstallerFileName = "InScribeSetup_6_16_19071_37797.exe",
+                            InstallerFileNameMsi = "InScribeSetup_6_16_19071_37797.msi",
+                            InstallerFileNameCanada = "InScribeSetup_6_16_19071_37797.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_6_16_19071_37797.msi",
+                            InstallerFileNameUK = "InScribeSetup_6_16_19071_37797.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_6_16_19071_37797.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
-                            ManualWordFileName = "eScription One InScribe Manual February 2019.docx",
-                            VersionNumber = "6.16.19060"
+                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",                            
+                            VersionNumber = "6.16.19071"
                         }
                     };
                 }
@@ -128,12 +126,11 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19061_894.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19061_894.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19061_894.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19070_34621.exe",
                             MajorVersionNumber = "2",
-                            ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",
-                            ManualWordFileName = "eScription One ShadowLink Manual Jan 2019.docx",
+                            ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",                            
                             VersionNumber = "2.8"
                         }
                     };
@@ -144,11 +141,10 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup_2_3_19060_39762.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19060_39762.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19060_39762.exe",
-                            MajorVersionNumber = "2",
-                            ManualWordFileName = "eScription One ShadowPrint Manual February 2019.docx",
+                            InstallerFileName = "ShadowPrintSetup_2_3_19070_40257.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19070_40257.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19070_40257.exe",
+                            MajorVersionNumber = "2",                            
                             ManualPdfFileName = "eScription One ShadowPrint Manual February 2019.pdf",
                             VersionNumber = "2.3"
                         }
@@ -177,7 +173,7 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
-                            VersionNumber = "6.7.19053",
+                            VersionNumber = "6.7.19070",
                             ReleaseNotes = new List<string>
                             {
                                 "Updated user interface.",
@@ -419,8 +415,7 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     InstallerPath = "Download",
                     InstallerFileName = "CSV_AutoText_Converter.exe",
-                    ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",
-                    ManualWordFileName = "CSV%20Autotext%20Converter.docx",
+                    ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",                    
                     Name = "CSV to InScribe AutoText Converter"
                 }
             };

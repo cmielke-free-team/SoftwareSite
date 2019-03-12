@@ -30,27 +30,12 @@ namespace Emdat.SoftwareSite.Controllers
             var model = new InScribeViewModel
             {
                 AdditionalLinks = new List<HyperLink>
-                {
-                    new HyperLink
-                    {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "Intro%20to%20InScribe%206_v4.pdf"}),
-                        Text = "An Introduction to InScribe 6 (PDF)"
-                    },
-                    new HyperLink
-                    {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "Intro%20to%20InScribe%206_v4.docx"}),
-                        Text = "An Introduction to InScribe 6 (DOC)"
-                    },
+                {                    
                     new HyperLink
                     {
                         NavigateUrl = Url.Action("Index", "Download", new { fileName = "Template%20Fields%20Use%20Guide%2020170608.1.docx"}),
                         Text = "How to use Template Fields and Functions"
-                    },
-                    new HyperLink
-                    {
-                        NavigateUrl = Url.Action("SpellCheckFaq"),
-                        Text = "Spell Checker FAQ"
-                    },
+                    }
                 },
                 ApplicationCode = APPLICATION_CODE,
                 ApplicationName = application.Name,
