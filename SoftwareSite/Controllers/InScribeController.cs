@@ -33,7 +33,7 @@ namespace Emdat.SoftwareSite.Controllers
                 {                    
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "Template%20Fields%20Use%20Guide%2020170608.1.docx"}),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Template Fields User Guide March 2019.pdf"}),
                         Text = "How to use Template Fields and Functions"
                     }
                 },

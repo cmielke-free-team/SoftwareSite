@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Net;
 using System.Web.Mvc;
 
@@ -24,8 +25,13 @@ namespace Emdat.SoftwareSite.Controllers
             {                
                 string downloadFilePath = System.IO.Path.Combine(DownloadsShare, fileName);
                 if(System.IO.File.Exists(downloadFilePath))
-                {                    
-                    return File(downloadFilePath, "application/octet-stream", fileName);
+                {
+                    string contentType = System.Web.MimeMapping.GetMimeMapping(downloadFilePath);                    
+                    if(string.IsNullOrWhiteSpace(contentType))
+                    {
+                        contentType = "application/octet-stream";
+                    }
+                    return File(downloadFilePath, contentType, fileName);
                 }
             }
 
