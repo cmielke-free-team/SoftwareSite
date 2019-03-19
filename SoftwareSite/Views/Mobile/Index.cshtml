@@ -12,7 +12,7 @@
             @foreach(var manualLink in Model.ManualLinks)
             {
                 <li>
-                    <a href="@manualLink.NavigateUrl">@manualLink.Text</a>
+                    <a href="@manualLink.NavigateUrl" target="_blank">@manualLink.Text</a>
                 </li>
             }
         </ul>
