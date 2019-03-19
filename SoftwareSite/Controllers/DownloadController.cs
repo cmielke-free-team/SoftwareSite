@@ -31,7 +31,16 @@ namespace Emdat.SoftwareSite.Controllers
                     {
                         contentType = "application/octet-stream";
                     }
-                    return File(downloadFilePath, contentType, fileName);
+
+                    //HACK: If you pass the filename to the File() method it 
+                    //always sets Content-Disposition: attachment, which will 
+                    //force the browser to present the Save As dialog. So 
+                    //instead we are manually setting the Content-Disposition 
+                    //header so that the browser will open the file natively if 
+                    //it can. For example, if the file is a PDF it will open in 
+                    //the browser instead of prompting the user to save the file.
+                    this.Response.Headers.Set("Content-Disposition", $"inline; filename={fileName}");
+                    return File(downloadFilePath, contentType);
                 }
             }
 
