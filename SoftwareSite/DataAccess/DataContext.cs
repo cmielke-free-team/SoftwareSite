@@ -415,7 +415,7 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     InstallerPath = "Download",
                     InstallerFileName = "CSV_AutoText_Converter.exe",
-                    ManualPdfFileName = "CSV%20Autotext%20Converter.pdf",                    
+                    ManualPdfFileName = "eScription One CSV Autotext Converter March 2019.pdf",                    
                     Name = "CSV to InScribe AutoText Converter"
                 }
             };
