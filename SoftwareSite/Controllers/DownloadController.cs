@@ -19,10 +19,15 @@ namespace Emdat.SoftwareSite.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotFound);
             }
-            
+
+            if (!string.IsNullOrWhiteSpace(System.IO.Path.GetDirectoryName(fileName)))
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+
             //check the share first
-            if(!string.IsNullOrWhiteSpace(DownloadsShare))
-            {                
+            if (!string.IsNullOrWhiteSpace(DownloadsShare))
+            {
                 string downloadFilePath = System.IO.Path.Combine(DownloadsShare, fileName);
                 if(System.IO.File.Exists(downloadFilePath))
                 {
