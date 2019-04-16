@@ -44,7 +44,7 @@ namespace Emdat.SoftwareSite.Controllers
                     //header so that the browser will open the file natively if 
                     //it can. For example, if the file is a PDF it will open in 
                     //the browser instead of prompting the user to save the file.
-                    this.Response.Headers.Set("Content-Disposition", $"inline; filename={fileName}");
+                    this.Response.Headers.Set("Content-Disposition", $"inline; filename=\"{fileName}\"");
                     return File(downloadFilePath, contentType);
                 }
             }

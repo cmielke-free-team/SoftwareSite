@@ -232,6 +232,8 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\InCommandController.cs" />
+    <Compile Include="Controllers\InQuiryController.cs" />
     <Compile Include="Controllers\RuntimeController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
@@ -272,6 +274,8 @@
     <Content Include="Views\InScribe\AsrTraining.cshtml" />
     <Content Include="Views\InScribe\SpellCheckFaq.cshtml" />
     <Content Include="Views\Forms\PTPolicy.cshtml" />
+    <Content Include="Views\InCommand\Index.cshtml" />
+    <Content Include="Views\InQuiry\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
