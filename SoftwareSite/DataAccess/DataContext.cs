@@ -409,13 +409,14 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     InstallerPath = "Download",
                     InstallerFileName = "AutoCorrect_AutoText.exe",
+                    ManualPdfFileName = "eScription One Word AutoCorrect to InScribe May 2019.pdf",
                     Name = "Word AutoCorrect to InScribe AutoText Converter"
                 },
                 new GetToolsRow
                 {
                     InstallerPath = "Download",
                     InstallerFileName = "CSV_AutoText_Converter.exe",
-                    ManualPdfFileName = "eScription One CSV Autotext Converter March 2019.pdf",                    
+                    ManualPdfFileName = "eScription One CSV Autotext Converter May 2019.pdf",                    
                     Name = "CSV to InScribe AutoText Converter"
                 }
             };
