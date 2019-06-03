@@ -45,7 +45,7 @@ namespace Emdat.SoftwareSite.Controllers
                     new HyperLink
                     {
                         NavigateUrl = Url.Action("Index", "Download", new { fileName = "InScribe6TrainingSetup.exe"}),
-                        Text = "InScribe 6 Training Files"
+                        Text = "InScribe Training Files"
                     },
                     new HyperLink
                     {
@@ -91,6 +91,11 @@ namespace Emdat.SoftwareSite.Controllers
         }
 
         public ActionResult SpellCheckFaq()
+        {
+            return View();
+        }
+
+        public ActionResult StructuredTraining()
         {
             return View();
         }
