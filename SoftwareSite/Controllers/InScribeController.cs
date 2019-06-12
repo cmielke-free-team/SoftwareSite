@@ -44,7 +44,7 @@ namespace Emdat.SoftwareSite.Controllers
                 {
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "InScribe6TrainingSetup.exe"}),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "InScribeTrainingSetup.exe"}),
                         Text = "InScribe Training Files"
                     },
                     new HyperLink
