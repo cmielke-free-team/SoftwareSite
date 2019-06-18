@@ -153,9 +153,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup_2_3_19128_35867.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19128_35867.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19128_35867.exe",
+                            InstallerFileName = "ShadowPrintSetup_2_3_19161_30614.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19161_30614.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19161_30614.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowPrint Manual February 2019.pdf",
                             VersionNumber = "2.3"
