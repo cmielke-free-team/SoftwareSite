@@ -206,7 +206,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\InScribe\Index.cshtml" />
-    <Content Include="Views\Forms\Index.cshtml" />
+    <Content Include="Views\Documents\Index.cshtml" />
     <Content Include="Views\InSync\Index.cshtml" />
     <Content Include="Views\Mobile\Index.cshtml" />
     <Content Include="Views\ShadowLink\Index.cshtml" />
@@ -236,7 +236,7 @@
     <Compile Include="Controllers\InQuiryController.cs" />
     <Compile Include="Controllers\RuntimeController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
-    <Compile Include="Controllers\FormsController.cs" />
+    <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InScribeController.cs" />
     <Compile Include="Controllers\InSyncController.cs" />
@@ -273,7 +273,7 @@
     <Content Include="Views\Shared\VersionHistory.cshtml" />
     <Content Include="Views\InScribe\AsrTraining.cshtml" />
     <Content Include="Views\InScribe\SpellCheckFaq.cshtml" />
-    <Content Include="Views\Forms\PTPolicy.cshtml" />
+    <Content Include="Views\Documents\PTPolicy.cshtml" />
     <Content Include="Views\InCommand\Index.cshtml" />
     <Content Include="Views\InQuiry\Index.cshtml" />
     <Content Include="Views\InScribe\StructuredTraining.cshtml" />

@@ -30,11 +30,16 @@ namespace Emdat.SoftwareSite.Controllers
             var model = new InScribeViewModel
             {
                 AdditionalLinks = new List<HyperLink>
-                {                    
+                {
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Template Fields User Guide March 2019.pdf"}),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Template Fields User Guide March 2019.pdf" }),
                         Text = "How to use Template Fields and Functions"
+                    },
+                    new HyperLink
+                    {
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One InScribe QA Ratings and Feedback Manual June 2019.pdf" }),
+                        Text = "QA Ratings and Feedback Manual"
                     }
                 },
                 ApplicationCode = APPLICATION_CODE,
@@ -44,13 +49,18 @@ namespace Emdat.SoftwareSite.Controllers
                 {
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "InScribeTrainingSetup.exe"}),
-                        Text = "InScribe Training Files"
+                        NavigateUrl = Url.Action("StructuredTraining"),
+                        Text = "InScribe ShadowScribe ASR Structured Training"
                     },
                     new HyperLink
                     {
                         NavigateUrl = Url.Action("AsrTraining"),
-                        Text = "InScribe ShadowScribe ASR Training"
+                        Text = "InScribe ShadowScribe ASR Unstructured Training"
+                    },
+                    new HyperLink
+                    {
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "InScribeTrainingSetup.exe"}),
+                        Text = "InScribe Training Files"
                     }
                 },
                 VersionInformation = new ApplicationVersions

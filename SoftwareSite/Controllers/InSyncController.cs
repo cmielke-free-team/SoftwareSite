@@ -31,13 +31,13 @@ namespace Emdat.SoftwareSite.Controllers
             {
                 new HyperLink
                 {
-                    NavigateUrl = "http://www.olympusamerica.com/cpg_section/software_results.asp?id=1179&os=w",
-                    Text = "Olympus America Software Upgrades"
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "DS-2400_FirmwareUpdate_v1.02_(DSSDS2).zip" }),
+                    Text = "Firmware Update for the Olympus DS-2400 Recorder"
                 },
                 new HyperLink
                 {
-                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "DS-2400_FirmwareUpdate_v1.02_(DSSDS2).zip" }),
-                    Text = "Firmware Update for the Olympus DS-2400 Recorder"
+                    NavigateUrl = "http://www.olympusamerica.com/cpg_section/software_results.asp?id=1179&os=w",
+                    Text = "Olympus America Software Upgrades"
                 }
             };
 
@@ -54,7 +54,7 @@ namespace Emdat.SoftwareSite.Controllers
 
             var model = new InSyncViewModel
             {
-                AdditionalLinks = additionalLinks,
+                AdditionalLinks = additionalLinks.OrderBy(l => l.Text),
                 ApplicationCode = APPLICATION_CODE,
                 ApplicationName = application.Name,
                 SupportedRecorderWarning = "Some older model recorders are not supported by a 64 bit version of Windows. Check with the recorder manufacturer for compatibility to your system before making a selection.",

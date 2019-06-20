@@ -2,7 +2,7 @@
 
 namespace Emdat.SoftwareSite.Controllers
 {
-    public class FormsController : SoftwareSiteControllerBase
+    public class DocumentsController : SoftwareSiteControllerBase
     {
         public ActionResult Index()
         {

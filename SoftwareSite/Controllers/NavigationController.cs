@@ -9,7 +9,7 @@ namespace Emdat.SoftwareSite.Controllers
         [ChildActionOnly]
         public ActionResult Tabs(string currentTab = "Home")
         {
-            string[] tabNames = { "Home", "InSync", "Mobile", "InScribe", "InCommand", "InQuiry", "ShadowLink", "ShadowPrint", "Tools", "Forms" };
+            string[] tabNames = { "Home", "InSync", "Mobile", "InScribe", "InCommand", "InQuiry", "ShadowLink", "ShadowPrint", "Tools", "Documents" };
             var tabs = (from t in tabNames
                         select new MenuItem
                         {
