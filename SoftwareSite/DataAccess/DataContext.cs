@@ -108,15 +108,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_0_19149_25558.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_0_19149_25558.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_0_19149_25558.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_0_19149_25558.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_0_19149_25558.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_0_19149_25558.msi",
+                            InstallerFileName = "InScribeSetup_7_0_19176_23356.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_0_19176_23356.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_0_19176_23356.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_0_19176_23356.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_0_19176_23356.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_0_19176_23356.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
-                            VersionNumber = "7.0.19149"
+                            VersionNumber = "7.0.19176"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -271,15 +271,25 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
+                            VersionNumber = "7.0.19176",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Added option to skip flagged words in spell checker.",
+                                "Resolved issue with spell checker \"Change All\" option removing flag for all misspelled words.",
+                                "Resolved issue with disabled table borders appearing in editor and delivered document."
+                            }
+                        },
+                        new GetApplicationVersionsRow
+                        {
                             VersionNumber = "7.0.19149",
                             ReleaseNotes = new List<string>
                             {
-                                "Enhanced experience when editing structured documents",
-                                "Command shortcuts can be added to the ribbon menu",
-                                "Users can assign ShadowScribe section actions to function keys",
-                                "Users can specify specialty when searching for associates ",
-                                "MT notes are displayed before visit selection window appears",
-                                "Dictation template window displays a preview of the dictation template"
+                                "Enhanced experience when editing structured documents.",
+                                "Command shortcuts can be added to the ribbon menu.",
+                                "Users can assign ShadowScribe section actions to function keys.",
+                                "Users can specify specialty when searching for associates.",
+                                "MT notes are displayed before visit selection window appears.",
+                                "Dictation template window displays a preview of the dictation template."
                             }
                         },
                         new GetApplicationVersionsRow
