@@ -108,15 +108,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_0_19176_23356.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_0_19176_23356.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_0_19176_23356.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_0_19176_23356.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_0_19176_23356.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_0_19176_23356.msi",
+                            InstallerFileName = "InScribeSetup_7_0_19205_35579.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_0_19205_35579.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_0_19205_35579.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_0_19205_35579.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_0_19205_35579.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_0_19205_35579.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
-                            VersionNumber = "7.0.19176"
+                            VersionNumber = "7.0.19205"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -269,6 +269,20 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "7.0.19205",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Resolved issue with invalid Benchmark KB credentials being saved.",
+                                "Resolved issue with spell check getting stuck between two words.",
+                                "Resolved issue with incorrect cursor placement after auto capitalization.",
+                                "Resolved issue with Benchmark KB associate search not returning results.",
+                                "Resolved issue with cursor not moving to next field upon F1 key press.",
+                                "Resolved issue with QT text highlighting being removed when navigating document.",
+                                "Resolved issue with not being able to insert dictation templates with tables.",
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "7.0.19176",
