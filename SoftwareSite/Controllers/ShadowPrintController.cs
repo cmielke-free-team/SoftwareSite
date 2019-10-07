@@ -1,5 +1,6 @@
 ﻿using Emdat.SoftwareSite.DataAccess;
 using Emdat.SoftwareSite.Models;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -38,6 +39,27 @@ namespace Emdat.SoftwareSite.Controllers
             };
 
             return View(model);
+        }
+
+        public ActionResult Download()
+        {
+            var data = new DataContext();
+            var versions = data.GetLatestApplicationVersions(APPLICATION_CODE);
+            if (!versions.Any())
+            {
+                throw new Exception("Unable to find ShadowPrint versions.");
+            }
+
+            var latest = versions
+                .OrderByDescending(v => Version.Parse(v.VersionNumber))
+                .First();
+
+            return RedirectToRoute(new
+            {
+                controller = "Download",
+                action = "Index",
+                fileName = latest.InstallerFileName
+            });
         }
     }
 }

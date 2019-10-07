@@ -162,6 +162,18 @@ namespace Emdat.SoftwareSite.DataAccess
                         }
                     };
                 }
+                case "PrintAgent":
+                {
+                    return new List<GetLatestApplicationVersionsRow>
+                    {
+                        new GetLatestApplicationVersionsRow
+                        {
+                            InstallerFileName = "EsOnePrint_1_1_28.exe",
+                            MajorVersionNumber = "1",
+                            VersionNumber = "1.1.28"
+                        }
+                    };
+                }
                 default:
                 {
                     return Enumerable.Empty<GetLatestApplicationVersionsRow>();
