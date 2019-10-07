@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 namespace Emdat.SoftwareSite.Controllers
 {
+    [RoutePrefix("InQuiry")]
     public class InQuiryController : SoftwareSiteControllerBase
     {
         private const string PRINT_AGENT_APP_CODE = "PrintAgent";
