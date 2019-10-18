@@ -108,15 +108,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_0_19205_35579.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_0_19205_35579.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_0_19205_35579.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_0_19205_35579.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_0_19205_35579.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_0_19205_35579.msi",
+                            InstallerFileName = "InScribeSetup_7_1_19260_25829.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_1_19260_25829.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_1_19260_25829.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_1_19260_25829.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_1_19260_25829.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_1_19260_25829.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
-                            VersionNumber = "7.0.19205"
+                            VersionNumber = "7.1.19260"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -281,6 +281,20 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "7.1.19260",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Enhanced Prior Transcriptions window to allow viewing multiple priors at once",
+                                "Added ability to listen to dictations for prior transcriptions",
+                                "Updated dictionaries",
+                                "Added keyboard shortcut import / export feature to allow customization of keyboard shortcuts",
+                                "Resolved issues with Ctrl + Arrow key navigation",
+                                "Resolved issues with formatting in template fields and copied text from prior transcriptions",
+                                "Resolved issues with Continue / Set Numbering"
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "7.0.19205",
