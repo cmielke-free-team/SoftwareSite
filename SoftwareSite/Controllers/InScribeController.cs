@@ -35,11 +35,16 @@ namespace Emdat.SoftwareSite.Controllers
                     {
                         NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Template Fields User Guide March 2019.pdf" }),
                         Text = "How to use Template Fields and Functions"
-                    },
+                    },                  
                     new HyperLink
                     {
                         NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One InScribe QA Ratings and Feedback Manual June 2019.pdf" }),
                         Text = "QA Ratings and Feedback Manual"
+                    },
+                    new HyperLink
+                    {
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Tips for InScribe 7 Shortcut Customization.pdf" }),
+                        Text = "Keyboard Shortcut Customization Guide"
                     }
                 },
                 ApplicationCode = APPLICATION_CODE,
