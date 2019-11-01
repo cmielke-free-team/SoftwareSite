@@ -168,9 +168,9 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "EsOnePrint_1_1_28.exe",
+                            InstallerFileName = "EsOnePrint_1_1_34.exe",
                             MajorVersionNumber = "1",
-                            VersionNumber = "1.1.28"
+                            VersionNumber = "1.1.34"
                         }
                     };
                 }
