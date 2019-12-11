@@ -283,6 +283,17 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
+                            VersionNumber = "7.2.19297",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Introduced new login page",
+                                "Added button to Data tab and shortcut key to insert associate data into transcription text",
+                                "Resolved formatting issues",
+                                "Resolved cursor focus issues"
+                            }
+                        },
+                        new GetApplicationVersionsRow
+                        {
                             VersionNumber = "7.1.19260",
                             ReleaseNotes = new List<string>
                             {
