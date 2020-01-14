@@ -108,6 +108,18 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
+                            InstallerFileName = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            MajorVersionNumber = "7",
+                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
+                            VersionNumber = "7.2.20007"
+                        },
+                        new GetLatestApplicationVersionsRow
+                        {
                             InstallerFileName = "InScribeSetup_7_1_19260_25829.exe",
                             InstallerFileNameMsi = "InScribeSetup_7_1_19260_25829.msi",
                             InstallerFileNameCanada = "InScribeSetup_7_1_19260_25829.exe",
@@ -283,16 +295,33 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
+                            VersionNumber = "7.2.20007",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Introduced new login page.",
+                                "Introduced skip silence feature.",
+                                "Added button to Data tab and shortcut key to insert associate data into transcription text.",
+                                "Added keyboard shortcut support for prior dictation playback.",
+                                "Added support for the Australia region.",
+                                "Resolved paragraph, lists and table formatting issues.",
+                                "Resolved cursor focus issues.",
+                                "Resolved issue with failure to restore AutoText files.",
+                                "Resolved spacing differences in Preview.",
+                                "Resolved issue with \"Can Print Tran\" setting not being honored.",
+                            }
+                        },
+                        new GetApplicationVersionsRow
+                        {
                             VersionNumber = "7.1.19260",
                             ReleaseNotes = new List<string>
                             {
-                                "Enhanced Prior Transcriptions window to allow viewing multiple priors at once",
-                                "Added ability to listen to dictations for prior transcriptions",
-                                "Updated dictionaries",
-                                "Added keyboard shortcut import / export feature to allow customization of keyboard shortcuts",
-                                "Resolved issues with Ctrl + Arrow key navigation",
-                                "Resolved issues with formatting in template fields and copied text from prior transcriptions",
-                                "Resolved issues with Continue / Set Numbering"
+                                "Enhanced Prior Transcriptions window to allow viewing multiple priors at once.",
+                                "Added ability to listen to dictations for prior transcriptions.",
+                                "Updated dictionaries.",
+                                "Added keyboard shortcut import / export feature to allow customization of keyboard shortcuts.",
+                                "Resolved issues with Ctrl + Arrow key navigation.",
+                                "Resolved issues with formatting in template fields and copied text from prior transcriptions.",
+                                "Resolved issues with Continue / Set Numbering."
                             }
                         },
                         new GetApplicationVersionsRow
@@ -424,7 +453,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             VersionNumber = "6.7.17171.21975",
                             ReleaseNotes = new List<string>
                             {
-                                "Resolved issue with blank Print Preview after Windows updates"
+                                "Resolved issue with blank Print Preview after Windows updates."
                             }
                         },
                         new GetApplicationVersionsRow
