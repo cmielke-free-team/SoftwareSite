@@ -22,7 +22,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "InSync",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -33,7 +33,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "InScribe",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -44,7 +44,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "ShadowLink",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -55,7 +55,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "ShadowPrint",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -88,18 +88,18 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetLatestApplicationVersionsRow>
                     {
-                        new GetLatestApplicationVersionsRow
+                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_7_19070_34665.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19070_34665.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileName = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_8_20016_19611.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_8_20016_19611.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_8_20016_19611.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
-                            VersionNumber = "6.7.19070"
-                        }
+                            VersionNumber = "6.8.20016" 
+                        }                      
                     };
                 }
                 case "InScribe":
@@ -207,6 +207,15 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.8.20016",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Introduced new login screen.",
+                                "Added support for Australia."
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.7.19070",
