@@ -88,7 +88,19 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetLatestApplicationVersionsRow>
                     {
-                         new GetLatestApplicationVersionsRow
+                        new GetLatestApplicationVersionsRow
+                        {
+                            InstallerFileName = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            MajorVersionNumber = "6",
+                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
+                            VersionNumber = "6.9.20016"
+                        },
+                        new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "InSyncSetup_6_8_20016_19611.exe",
                             InstallerFileNameMsi = "InSyncSetup_6_8_20016_19611.msi",
@@ -98,8 +110,8 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUKMsi = "InSyncSetup_6_8_20016_19611.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
-                            VersionNumber = "6.8.20016" 
-                        }                      
+                            VersionNumber = "6.8.20016"
+                        }
                     };
                 }
                 case "InScribe":
@@ -207,6 +219,14 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.9.20016",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Added hold-to-record option for PowerMic."
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.8.20016",
