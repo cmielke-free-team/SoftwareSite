@@ -162,28 +162,28 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19070_34621.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19070_34621.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_9_20041_19823.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_9_20041_19823.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_9_20041_19823.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",
-                            VersionNumber = "2.8"
+                            VersionNumber = "2.9"
                         }
-                    };
+                    };                    
                 }
                 case "ShadowPrint":
                 {
                     return new List<GetLatestApplicationVersionsRow>
-                    {
+                    {                        
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup_2_3_19161_30614.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19161_30614.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19161_30614.exe",
+                            InstallerFileName = "ShadowPrintSetup_2_4_20038_26641.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_4_20038_26641.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_4_20038_26641.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowPrint Manual February 2019.pdf",
-                            VersionNumber = "2.3"
-                        }
+                            VersionNumber = "2.4"
+                        }                        
                     };
                 }
                 case "PrintAgent":
