@@ -22,7 +22,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "InSync",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -33,7 +33,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "InScribe",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -44,7 +44,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "ShadowLink",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -55,7 +55,7 @@ namespace Emdat.SoftwareSite.DataAccess
                         new GetApplicationRow
                         {
                             Name = "ShadowPrint",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 7 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
                         }
                     };
                 }
@@ -90,15 +90,27 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_7_19070_34665.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_7_19070_34665.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_7_19070_34665.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_7_19070_34665.msi",
+                            InstallerFileName = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_9_20016_24954.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_9_20016_24954.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
-                            VersionNumber = "6.7.19070"
+                            VersionNumber = "6.9.20016"
+                        },
+                        new GetLatestApplicationVersionsRow
+                        {
+                            InstallerFileName = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_8_20016_19611.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_8_20016_19611.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_8_20016_19611.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_8_20016_19611.msi",
+                            MajorVersionNumber = "6",
+                            ManualPdfFileName = "eScription One InSync Manual February 2019 .pdf",
+                            VersionNumber = "6.8.20016"
                         }
                     };
                 }
@@ -106,6 +118,18 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetLatestApplicationVersionsRow>
                     {
+                        new GetLatestApplicationVersionsRow
+                        {
+                            InstallerFileName = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_2_20007_19765.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            MajorVersionNumber = "7",
+                            ManualPdfFileName = "eScription One InScribe Manual February 2019.pdf",
+                            VersionNumber = "7.2.20007"
+                        },
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "InScribeSetup_7_1_19260_25829.exe",
@@ -138,28 +162,28 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowLinkSetup_2_8_19070_34621.exe",
-                            InstallerFileNameCanada = "ShadowLinkSetup_2_8_19070_34621.exe",
-                            InstallerFileNameUK = "ShadowLinkSetup_2_8_19070_34621.exe",
+                            InstallerFileName = "ShadowLinkSetup_2_9_20041_19823.exe",
+                            InstallerFileNameCanada = "ShadowLinkSetup_2_9_20041_19823.exe",
+                            InstallerFileNameUK = "ShadowLinkSetup_2_9_20041_19823.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",
-                            VersionNumber = "2.8"
+                            VersionNumber = "2.9"
                         }
-                    };
+                    };                    
                 }
                 case "ShadowPrint":
                 {
                     return new List<GetLatestApplicationVersionsRow>
-                    {
+                    {                        
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "ShadowPrintSetup_2_3_19161_30614.exe",
-                            InstallerFileNameCanada = "ShadowPrintSetup_2_3_19161_30614.exe",
-                            InstallerFileNameUK = "ShadowPrintSetup_2_3_19161_30614.exe",
+                            InstallerFileName = "ShadowPrintSetup_2_4_20038_26641.exe",
+                            InstallerFileNameCanada = "ShadowPrintSetup_2_4_20038_26641.exe",
+                            InstallerFileNameUK = "ShadowPrintSetup_2_4_20038_26641.exe",
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowPrint Manual February 2019.pdf",
-                            VersionNumber = "2.3"
-                        }
+                            VersionNumber = "2.4"
+                        }                        
                     };
                 }
                 case "PrintAgent":
@@ -195,6 +219,23 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.9.20016",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Added hold-to-record option for PowerMic."
+                            }
+                        },
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.8.20016",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Introduced new login screen.",
+                                "Added support for Australia."
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.7.19070",
@@ -283,16 +324,33 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetApplicationVersionsRow
                         {
+                            VersionNumber = "7.2.20007",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Introduced new login page.",
+                                "Introduced skip silence feature.",
+                                "Added button to Data tab and shortcut key to insert associate data into transcription text.",
+                                "Added keyboard shortcut support for prior dictation playback.",
+                                "Added support for the Australia region.",
+                                "Resolved paragraph, lists and table formatting issues.",
+                                "Resolved cursor focus issues.",
+                                "Resolved issue with failure to restore AutoText files.",
+                                "Resolved spacing differences in Preview.",
+                                "Resolved issue with \"Can Print Tran\" setting not being honored.",
+                            }
+                        },
+                        new GetApplicationVersionsRow
+                        {
                             VersionNumber = "7.1.19260",
                             ReleaseNotes = new List<string>
                             {
-                                "Enhanced Prior Transcriptions window to allow viewing multiple priors at once",
-                                "Added ability to listen to dictations for prior transcriptions",
-                                "Updated dictionaries",
-                                "Added keyboard shortcut import / export feature to allow customization of keyboard shortcuts",
-                                "Resolved issues with Ctrl + Arrow key navigation",
-                                "Resolved issues with formatting in template fields and copied text from prior transcriptions",
-                                "Resolved issues with Continue / Set Numbering"
+                                "Enhanced Prior Transcriptions window to allow viewing multiple priors at once.",
+                                "Added ability to listen to dictations for prior transcriptions.",
+                                "Updated dictionaries.",
+                                "Added keyboard shortcut import / export feature to allow customization of keyboard shortcuts.",
+                                "Resolved issues with Ctrl + Arrow key navigation.",
+                                "Resolved issues with formatting in template fields and copied text from prior transcriptions.",
+                                "Resolved issues with Continue / Set Numbering."
                             }
                         },
                         new GetApplicationVersionsRow
@@ -424,7 +482,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             VersionNumber = "6.7.17171.21975",
                             ReleaseNotes = new List<string>
                             {
-                                "Resolved issue with blank Print Preview after Windows updates"
+                                "Resolved issue with blank Print Preview after Windows updates."
                             }
                         },
                         new GetApplicationVersionsRow
