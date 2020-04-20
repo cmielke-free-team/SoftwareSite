@@ -120,15 +120,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_2_20007_19765.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_2_20007_19765.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_2_20007_19765.msi",
+                            InstallerFileName = "InScribeSetup_7_3_20086_7265.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_3_20086_7265.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_3_20086_7265.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_3_20086_7265.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_3_20086_7265.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_3_20086_7265.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual January 2020.pdf",
-                            VersionNumber = "7.2.20007"
+                            VersionNumber = "7.3.20086"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -322,6 +322,27 @@ namespace Emdat.SoftwareSite.DataAccess
                 {
                     return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "7.3.20086",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Added support for WAV playback in InScribe.",
+                                "Added Time code validation checks in InScribe.",
+                                "Added shortcut tip on Ratings tab.",
+                                "Added support for cut, copy and paste shortcut keys in the comment box.",
+                                "Resolved issue with spell check stuck on words in a list.",
+                                "Resolved issue with the table being copied when copying table text in unstructured documents.",
+                                "Resolved issue inaccurate dictation time stamps after one hour mark.",
+                                "Resolved issues with tab key not working in CC panel and related fields.",
+                                "Resolved issue with auto capitalization when deleting or replacing a highlighted period.",
+                                "Resolved indentation formatting issues within document templates.",
+                                "Resolved issues with numbering in nested lists.",
+                                "Resolved issue with list items being deleted when using Backspace.",
+                                "Removed duplicate CTRL+E shortcut for ASR Enhanced shortcuts.",
+                                "Fixed issues related to Prior Transcriptions.",
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "7.2.20007",
