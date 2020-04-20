@@ -132,18 +132,6 @@ namespace Emdat.SoftwareSite.DataAccess
                         },
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_2_20007_19765.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_2_20007_19765.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_2_20007_19765.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_2_20007_19765.msi",
-                            MajorVersionNumber = "7",
-                            ManualPdfFileName = "eScription One InScribe Manual January 2020.pdf",
-                            VersionNumber = "7.2.20007"
-                        },
-                        new GetLatestApplicationVersionsRow
-                        {
                             InstallerFileName = "InScribeSetup_7_1_19260_25829.exe",
                             InstallerFileNameMsi = "InScribeSetup_7_1_19260_25829.msi",
                             InstallerFileNameCanada = "InScribeSetup_7_1_19260_25829.exe",
