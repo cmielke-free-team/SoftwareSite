@@ -16,53 +16,53 @@ namespace Emdat.SoftwareSite.DataAccess
             switch (applicationCode)
             {
                 case "InSync":
-                {
-                    return new List<GetApplicationRow>
+                    {
+                        return new List<GetApplicationRow>
                     {
                         new GetApplicationRow
                         {
                             Name = "InSync",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 10 and later operating systems."
                         }
                     };
-                }
+                    }
                 case "InScribe":
-                {
-                    return new List<GetApplicationRow>
+                    {
+                        return new List<GetApplicationRow>
                     {
                         new GetApplicationRow
                         {
                             Name = "InScribe",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 10 and later operating systems."
                         }
                     };
-                }
+                    }
                 case "ShadowLink":
-                {
-                    return new List<GetApplicationRow>
+                    {
+                        return new List<GetApplicationRow>
                     {
                         new GetApplicationRow
                         {
                             Name = "ShadowLink",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 10 and later operating systems."
                         }
                     };
-                }
+                    }
                 case "ShadowPrint":
-                {
-                    return new List<GetApplicationRow>
+                    {
+                        return new List<GetApplicationRow>
                     {
                         new GetApplicationRow
                         {
                             Name = "ShadowPrint",
-                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 8.1 and later operating systems."
+                            SupportedOperatingSystemWarning = "Support is only available for products running on Windows 10 and later operating systems."
                         }
                     };
-                }
+                    }
                 default:
-                {
-                    return Enumerable.Empty<GetApplicationRow>();
-                }
+                    {
+                        return Enumerable.Empty<GetApplicationRow>();
+                    }
             }
         }
 
@@ -85,8 +85,8 @@ namespace Emdat.SoftwareSite.DataAccess
             switch (applicationCode)
             {
                 case "InSync":
-                {
-                    return new List<GetLatestApplicationVersionsRow>
+                    {
+                        return new List<GetLatestApplicationVersionsRow>
                     {
                         new GetLatestApplicationVersionsRow
                         {
@@ -113,10 +113,10 @@ namespace Emdat.SoftwareSite.DataAccess
                             VersionNumber = "6.8.20016"
                         }
                     };
-                }
+                    }
                 case "InScribe":
-                {
-                    return new List<GetLatestApplicationVersionsRow>
+                    {
+                        return new List<GetLatestApplicationVersionsRow>
                     {
                         new GetLatestApplicationVersionsRow
                         {
@@ -155,10 +155,10 @@ namespace Emdat.SoftwareSite.DataAccess
                             VersionNumber = "6.16.19071"
                         }
                     };
-                }
+                    }
                 case "ShadowLink":
-                {
-                    return new List<GetLatestApplicationVersionsRow>
+                    {
+                        return new List<GetLatestApplicationVersionsRow>
                     {
                         new GetLatestApplicationVersionsRow
                         {
@@ -169,12 +169,12 @@ namespace Emdat.SoftwareSite.DataAccess
                             ManualPdfFileName = "eScription One ShadowLink Manual Jan 2019.pdf",
                             VersionNumber = "2.9"
                         }
-                    };                    
-                }
+                    };
+                    }
                 case "ShadowPrint":
-                {
-                    return new List<GetLatestApplicationVersionsRow>
-                    {                        
+                    {
+                        return new List<GetLatestApplicationVersionsRow>
+                    {
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "ShadowPrintSetup_2_4_20038_26641.exe",
@@ -183,12 +183,12 @@ namespace Emdat.SoftwareSite.DataAccess
                             MajorVersionNumber = "2",
                             ManualPdfFileName = "eScription One ShadowPrint Manual January 2020.pdf",
                             VersionNumber = "2.4"
-                        }                        
+                        }
                     };
-                }
+                    }
                 case "PrintAgent":
-                {
-                    return new List<GetLatestApplicationVersionsRow>
+                    {
+                        return new List<GetLatestApplicationVersionsRow>
                     {
                         new GetLatestApplicationVersionsRow
                         {
@@ -197,11 +197,11 @@ namespace Emdat.SoftwareSite.DataAccess
                             VersionNumber = "1.1.34"
                         }
                     };
-                }
+                    }
                 default:
-                {
-                    return Enumerable.Empty<GetLatestApplicationVersionsRow>();
-                }
+                    {
+                        return Enumerable.Empty<GetLatestApplicationVersionsRow>();
+                    }
             }
         }
 
@@ -216,8 +216,8 @@ namespace Emdat.SoftwareSite.DataAccess
             switch (applicationCode)
             {
                 case "InSync":
-                {
-                    return new List<GetApplicationVersionsRow>
+                    {
+                        return new List<GetApplicationVersionsRow>
                     {
                         new GetApplicationVersionsRow
                         {
@@ -317,10 +317,10 @@ namespace Emdat.SoftwareSite.DataAccess
                             }
                         }
                     };
-                }
+                    }
                 case "InScribe":
-                {
-                    return new List<GetApplicationVersionsRow>
+                    {
+                        return new List<GetApplicationVersionsRow>
                     {
                         new GetApplicationVersionsRow
                         {
@@ -526,11 +526,11 @@ namespace Emdat.SoftwareSite.DataAccess
                         }
 
                     };
-                }
+                    }
                 default:
-                {
-                    return Enumerable.Empty<GetApplicationVersionsRow>();
-                }
+                    {
+                        return Enumerable.Empty<GetApplicationVersionsRow>();
+                    }
             }
         }
 
