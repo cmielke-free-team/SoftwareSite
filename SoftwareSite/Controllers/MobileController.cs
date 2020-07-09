@@ -23,6 +23,11 @@ namespace Emdat.SoftwareSite.Controllers
                     {
                         NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual March 2020.pdf"}),
                         Text = "iPhone Installation and User Manual"
+                    },
+                    new HyperLink
+                    {
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "How to Log in Using MFA for InQuiry, InSync, and Mobile Apps.pdf" }),
+                        Text = "How to Login Using MFA"
                     }
                 }
             };

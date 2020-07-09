@@ -36,6 +36,11 @@ namespace Emdat.SoftwareSite.Controllers
                 },
                 new HyperLink
                 {
+                    NavigateUrl = Url.Action("Index", "Download", new { fileName = "How to Log in Using MFA for InQuiry, InSync, and Mobile Apps.pdf" }),
+                    Text = "How to Login Using MFA"
+                },
+                new HyperLink
+                {
                     NavigateUrl = "http://www.olympusamerica.com/cpg_section/software_results.asp?id=1179&os=w",
                     Text = "Olympus America Software Upgrades"
                 }
