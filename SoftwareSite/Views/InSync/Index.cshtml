@@ -11,14 +11,8 @@
         @Html.DisplayFor(m => m.SupportedOperatingSystemWarning, "Warning")
         <p>One of the steps of installing and configuring your recorder will direct you to download the @Model.ApplicationName software, found below.</p>
         @Html.DisplayFor(m => m.VersionInformation)
-    </fieldset>
-</div>
-<div class="grid-box right">
-    <fieldset>
-        <legend>Hand Held Recorder Instructions</legend>
-        <p>If you are using an Olympus recorder, the installation and configuration process depends on which DSS Player software came with your recorder. Use the table below to find the appropriate Installation Manual for your recorder and software type, which can be located on the software CD that is packaged with your recorder.</p>
-        <p><a href="@Url.Action("Index", "Download", new { fileName = "eScription One Supported Recorders.pdf" })" target="_blank">List of Supported Recorders</a></p>
+        <p>InSync supports any digital recorder that connects to a computer as a “removable drive” and records in any of these standard audio formats: DSS, DS2, MP3, SRI, WAV, WMA, MSV.</p>
         @Html.DisplayFor(m => m.SupportedRecorderWarning, "Warning")
     </fieldset>
 </div>
-@Html.DisplayFor(m => m.AdditionalLinks, "AdditionalLinks")
+@Html.DisplayFor(m => m.AdditionalLinks, "AdditionalLinks", new { FloatRight = true })

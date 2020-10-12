@@ -1,7 +1,13 @@
 ﻿@model IEnumerable<System.Web.UI.WebControls.HyperLink>
 @if (Model != null && Model.Any())
 {
-<div class="grid-box left">
+    var containerClass = "left";
+    if (((bool?)ViewData["FloatRight"]).GetValueOrDefault())
+    {
+        containerClass = "right";
+    }
+
+<div class="grid-box @containerClass">
     <fieldset>
         <legend>Other Links of Interest</legend>
         <ul class="dashed">

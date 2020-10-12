@@ -62,7 +62,7 @@ namespace Emdat.SoftwareSite.Controllers
                 AdditionalLinks = additionalLinks.OrderBy(l => l.Text),
                 ApplicationCode = APPLICATION_CODE,
                 ApplicationName = application.Name,
-                SupportedRecorderWarning = "Some older model recorders are not supported by a 64 bit version of Windows. Check with the recorder manufacturer for compatibility to your system before making a selection.",
+                SupportedRecorderWarning = "Some older model recorders are not supported by a 64-bit version of Windows. Check with the recorder manufacturer for compatibility.",
                 SupportedOperatingSystemWarning = application.SupportedOperatingSystemWarning,
                 VersionInformation = new ApplicationVersions
                 {

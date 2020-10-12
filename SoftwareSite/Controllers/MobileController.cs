@@ -16,12 +16,12 @@ namespace Emdat.SoftwareSite.Controllers
                 {
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual March 2020.pdf" }),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One Mobile Android Manual October 2020.pdf" }),
                         Text = "Android Installation and User Manual"
                     },
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual March 2020.pdf"}),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual September 2020.pdf"}),
                         Text = "iPhone Installation and User Manual"
                     },
                     new HyperLink
