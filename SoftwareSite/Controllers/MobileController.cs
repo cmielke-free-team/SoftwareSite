@@ -21,7 +21,7 @@ namespace Emdat.SoftwareSite.Controllers
                     },
                     new HyperLink
                     {
-                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual September 2020.pdf"}),
+                        NavigateUrl = Url.Action("Index", "Download", new { fileName = "eScription One iOS Manual November 2020.pdf"}),
                         Text = "iPhone Installation and User Manual"
                     },
                     new HyperLink
