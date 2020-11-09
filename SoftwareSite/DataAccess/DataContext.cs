@@ -166,7 +166,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameCanada = "ShadowLinkSetup_2_9_20041_19823.exe",
                             InstallerFileNameUK = "ShadowLinkSetup_2_9_20041_19823.exe",
                             MajorVersionNumber = "2",
-                            ManualPdfFileName = "eScription One ShadowLink Manual Oct 2020.pdf",
+                            ManualPdfFileName = "eScription One ShadowLink Manual November 2020.pdf",
                             VersionNumber = "2.9"
                         }
                     };
