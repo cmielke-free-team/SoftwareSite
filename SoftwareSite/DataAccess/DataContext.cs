@@ -120,15 +120,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_3_20086_7265.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_3_20086_7265.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_3_20086_7265.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_3_20086_7265.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_3_20086_7265.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_3_20086_7265.msi",
+                            InstallerFileName = "InScribeSetup_7_3_20294_22712.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_3_20294_22712.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_3_20294_22712.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_3_20294_22712.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_3_20294_22712.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_3_20294_22712.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual January 2020.pdf",
-                            VersionNumber = "7.3.20086"
+                            VersionNumber = "7.3.20294"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -322,6 +322,37 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "7.3.20294",
+                            ReleaseNotes = new List<string>
+                            {
+                               "Added support for Waveform control.",
+                               "Changed dictation details keyboard jump key assignment to Q.",
+                               "Decreased number of lines scrolled when using mouse wheel.",
+                               "Deprecated external media player.",
+                               "Enforced read-only fields in demographics.",
+                               "Enhanced pool window.",
+                               "Resolved issue with company field in associate and patient addresses not adhering to configuration setting.",
+                               "Resolved issue with cursor and demographics not being visible when the editor is maximized and patient demographic keyboard shortcuts are used.",
+                               "Resolved issue with dictation playback not starting at designated time stamp when a time stamp is first in a list item.",
+                               "Resolved issue with document type changing when appended, irrespective of configuration settings.",
+                               "Resolved issue with first letter of AutoText expansions automatically capitalizing.",
+                               "Resolved issue with font changing after splitting a transcription.",
+                               "Resolved issue with multiple patient associates not being retained upon upload.",
+                               "Resolved issue with prior transcription dictation playback not stopping when when Prior Transcriptions list is refreshed.",
+                               "Resolved issue with spell check stuck on Ignored words.",
+                               "Resolved issue with structured jobs not being completed when alternate time stamp format is enabled.",
+                               "Resolved issue with table losing properties when loading document and dictation templates.",
+                               "Resolved issue with table widths being inaccurately represented in editor and preview transcription.",
+                               "Resolved issue with the table being copied when copying table text from prior transcription.",
+                               "Resolved job upload issue during next action if next job fails to load.",
+                               "Resolved spacing and formatting issues in lists.",
+                               "Updated 2020 Stedman's Dictionary (requires a Benchmark KB subscription).",
+                               "Updated Copy Dictation and Copy Dictation and Header window titles and button texts for clarification.",
+                               "Updated Preview Transcription to match the spacing in the editor.",
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "7.3.20086",
