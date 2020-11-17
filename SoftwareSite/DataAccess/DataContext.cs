@@ -97,7 +97,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUK = "InSyncSetup_6_9_20016_24954.exe",
                             InstallerFileNameUKMsi = "InSyncSetup_6_9_20016_24954.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InSync Manual September 2020.pdf",
+                            ManualPdfFileName = "eScription One InSync Manual November 2020.pdf",
                             VersionNumber = "6.9.20016"
                         },
                         new GetLatestApplicationVersionsRow
@@ -109,7 +109,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUK = "InSyncSetup_6_8_20016_19611.exe",
                             InstallerFileNameUKMsi = "InSyncSetup_6_8_20016_19611.msi",
                             MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InSync Manual September 2020.pdf",
+                            ManualPdfFileName = "eScription One InSync Manual November 2020.pdf",
                             VersionNumber = "6.8.20016"
                         }
                     };
@@ -181,7 +181,7 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameCanada = "ShadowPrintSetup_2_4_20038_26641.exe",
                             InstallerFileNameUK = "ShadowPrintSetup_2_4_20038_26641.exe",
                             MajorVersionNumber = "2",
-                            ManualPdfFileName = "eScription One ShadowPrint Manual January 2020.pdf",
+                            ManualPdfFileName = "eScription One ShadowPrint Manual November 2020.pdf",
                             VersionNumber = "2.4"
                         }
                     };
