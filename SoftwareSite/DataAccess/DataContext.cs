@@ -90,16 +90,16 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_9_20016_24954.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_9_20016_24954.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_9_20016_24954.msi",
+                            InstallerFileName = "InSyncSetup_6_11_20329_29723.exe",
+                            InstallerFileNameMsi = "InSyncSetup_6_11_20329_29723.msi",
+                            InstallerFileNameCanada = "InSyncSetup_6_11_20329_29723.exe",
+                            InstallerFileNameCanadaMsi = "InSyncSetup_6_11_20329_29723.msi",
+                            InstallerFileNameUK = "InSyncSetup_6_11_20329_29723.exe",
+                            InstallerFileNameUKMsi = "InSyncSetup_6_11_20329_29723.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual November 2020.pdf",
-                            VersionNumber = "6.9.20016"
-                        },
+                            VersionNumber = "6.11.20329"
+                        },                       
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "InSyncSetup_6_8_20016_19611.exe",
@@ -220,6 +220,20 @@ namespace Emdat.SoftwareSite.DataAccess
                         return new List<GetApplicationVersionsRow>
                     {
                         new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "6.11.20329",
+                            ReleaseNotes = new List<string>
+                            {
+                                "Prompt for Action, Place on Hold, and Queue options have been added for handling incoming PACS requests when using the XML method for PACS integration.",
+                                "A Reject option has been added to the Prompt for Action dialog for clients using the port method for PACS integration.",
+                                "Users can disable search for PACS appointments when using PACS (port or XML method).",
+                                "The My Favorites and default lists for Document Types and Locations now appear in alphabetical order.",
+                                "Select All / Deselect All buttons have been added, allowing users to select / deselect all Favorite Document Types and Locations at once.",
+                                "InSync now supports plug and play for Olympus RecMic and Philips SpeechMike microphones, as well as new configuration screens for button /event customization if desired.",
+                                "Fixed an issue where dictation upload would not successfully resume after the upload was interrupted."
+                            }
+                        },
+                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "6.9.20016",
                             ReleaseNotes = new List<string>
