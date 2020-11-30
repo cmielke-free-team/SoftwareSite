@@ -98,20 +98,8 @@ namespace Emdat.SoftwareSite.DataAccess
                             InstallerFileNameUKMsi = "InSyncSetup_6_11_20329_29723.msi",
                             MajorVersionNumber = "6",
                             ManualPdfFileName = "eScription One InSync Manual November 2020.pdf",
-                            VersionNumber = "6.11.20016"
-                        },
-                        new GetLatestApplicationVersionsRow
-                        {
-                            InstallerFileName = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameMsi = "InSyncSetup_6_9_20016_24954.msi",
-                            InstallerFileNameCanada = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameCanadaMsi = "InSyncSetup_6_9_20016_24954.msi",
-                            InstallerFileNameUK = "InSyncSetup_6_9_20016_24954.exe",
-                            InstallerFileNameUKMsi = "InSyncSetup_6_9_20016_24954.msi",
-                            MajorVersionNumber = "6",
-                            ManualPdfFileName = "eScription One InSync Manual November 2020.pdf",
-                            VersionNumber = "6.9.20016"
-                        },
+                            VersionNumber = "6.11.20329"
+                        },                       
                         new GetLatestApplicationVersionsRow
                         {
                             InstallerFileName = "InSyncSetup_6_8_20016_19611.exe",
