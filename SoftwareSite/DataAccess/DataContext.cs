@@ -108,15 +108,15 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         new GetLatestApplicationVersionsRow
                         {
-                            InstallerFileName = "InScribeSetup_7_3_20294_22712.exe",
-                            InstallerFileNameMsi = "InScribeSetup_7_3_20294_22712.msi",
-                            InstallerFileNameCanada = "InScribeSetup_7_3_20294_22712.exe",
-                            InstallerFileNameCanadaMsi = "InScribeSetup_7_3_20294_22712.msi",
-                            InstallerFileNameUK = "InScribeSetup_7_3_20294_22712.exe",
-                            InstallerFileNameUKMsi = "InScribeSetup_7_3_20294_22712.msi",
+                            InstallerFileName = "InScribeSetup_7_4_21005_42873.exe",
+                            InstallerFileNameMsi = "InScribeSetup_7_4_21005_42873.msi",
+                            InstallerFileNameCanada = "InScribeSetup_7_4_21005_42873.exe",
+                            InstallerFileNameCanadaMsi = "InScribeSetup_7_4_21005_42873.msi",
+                            InstallerFileNameUK = "InScribeSetup_7_4_21005_42873.exe",
+                            InstallerFileNameUKMsi = "InScribeSetup_7_4_21005_42873.msi",
                             MajorVersionNumber = "7",
                             ManualPdfFileName = "eScription One InScribe Manual January 2020.pdf",
-                            VersionNumber = "7.3.20294"
+                            VersionNumber = "7.4.21005"
                         },
                         new GetLatestApplicationVersionsRow
                         {
@@ -324,6 +324,19 @@ namespace Emdat.SoftwareSite.DataAccess
                     {
                         return new List<GetApplicationVersionsRow>
                     {
+                        new GetApplicationVersionsRow
+                        {
+                            VersionNumber = "7.4.21005",
+                            ReleaseNotes = new List<string>
+                            {
+                               "Enhanced Transcription Log window.",
+                               "Resolved copy/paste issues in list.",
+                               "Resolved job upload issue when the next job fails to load.",
+                               "Resolved issue with text from prior transcription being copied with justified format.",
+                               "Renamed Company Name label to Business Name in Associate Details window.",
+                               "Corrected the status message for repooled/invalidated job when the next job fails to load.",
+                            }
+                        },
                         new GetApplicationVersionsRow
                         {
                             VersionNumber = "7.3.20294",
